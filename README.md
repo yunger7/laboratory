@@ -13,12 +13,14 @@ Existem 3 motivos por trás da criação desse repositório:
 * Registrar o aprendizado adquirido por conta própria
 * Registrar os experimentos realizados com o intuito de aprofundar o conhecimento em um determinado assunto
 * Compartilhar o material que me foi útil
+
 ---
 
 ## Assuntos com interesse:
+*Em breve adicionarei os links com o material utilizado*
 - [x] Lógica de programação
 - [x] Git e GitHub 
 - [x] JavaScript Básico
-- [ ] HTML5 e CSS3
+- [ ] HTML5 e CSS3 (Em andamento)
 - [ ] Wordpress
 - [ ] Python
