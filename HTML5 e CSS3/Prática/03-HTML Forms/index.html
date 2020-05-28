@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <form>
+        <!--Input text-->
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="username" required>
+        <br><br>
+
+        <!--Input email-->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="enter your email" required>
+        <br><br>
+
+        <!--Input password-->
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="choose a password" required>
+
+        <!--Input Radio-->
+        <p>Select you age:</p>
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-1">26-50</label>
+        <input type="radio" name="age" value="51+" id="option-3">
+        <label for="option-1">51+</label>
+        <br><br>
+
+        <!--Select-->
+        <label for="sec-question">Security question:</label>
+        <select name="" id="sec-question">
+            <option value="sec-q1">What is your favorite color?</option>
+            <option value="sec-q2">What is the second name of your favorite teacher</option>
+            <option value="sec-q3">What is your favorite security question?</option>
+        </select>
+        <br><br>
+        <label for="sec-answer">Security question answer:</label>
+        <input type="text" id="sec-answer" name="sec-answer">
+        <br><br>
+
+        <!--Text area-->
+        <label for="bio">Type your bio:</label>
+        <br>
+        <textarea name="bio" id="bio" cols="70" rows="10" placeholder="Type here..."></textarea>
+        <br><br>
+
+        <!--Submit button-->
+        <input type="submit" value="Submit Form">
+    </form>
+
+</body>
+</html>
