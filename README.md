@@ -1,4 +1,4 @@
-# Autodidatismo
+# HubWay
 O hub do meu conhecimento adquirido como autodidata.
 
 ---
@@ -10,6 +10,7 @@ Ser um autodidata não significa aprender sem a ajuda de ninguem, significa aven
 ## História desse repositório
 
 Existem 3 motivos por trás da criação desse repositório:
+* Registrar minha trajetória como autodidata
 * Registrar o aprendizado adquirido por conta própria
 * Registrar os experimentos realizados com o intuito de aprofundar o conhecimento em um determinado assunto
 * Compartilhar o material que me foi útil
