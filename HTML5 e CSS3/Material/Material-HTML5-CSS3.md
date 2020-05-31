@@ -1,4 +1,4 @@
-# Material
+# Material HTML & CSS
 
 Aqui você encontra todos os materiais que encontrei e julguei útil para o aprendizado em HTML e CSS.
 - [Vídeos](#vídeos)
