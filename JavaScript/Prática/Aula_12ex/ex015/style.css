@@ -1,0 +1,24 @@
+body{
+    background: darkslategray;
+    font: normal 15pt Consolas;
+
+}
+header{
+    color: whitesmoke;
+    text-align: center;
+
+}
+section{
+    background: wheat;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+
+}
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora simples</h1>
+    </header>
+    <section id="caixa">
+        <div id="entrada">
+            <p class="digite">Digite os numeros:</p>
+            <input type="number" name="txtnum1" id="txtnum1">
+            <input type="number" name="txtnum2" id="txtnum2">
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+        <div id="operacao">
+            <p class="digite">Digite uma operação:</p>
+            <p>
+            <input type="radio" name="operacao" id="soma" checked>
+            <label for="soma">Soma</label>
+            </p><p>
+            <input type="radio" name="operacao" id="subtracao">
+            <label for="subtracao">Subtracao</label>
+            </p><p>
+            <input type="radio" name="operacao" id="multiplicacao">
+            <label for="multiplicacao">Multiplicação</label>
+            </p><p>
+            <input type="radio" name="operacao" id="divisao">
+            <label for="divisao">Divisão</label>
+            </p>
+        </div>
+        <div id="res">
+  
+        </div>
+    </section>
+    <footer>
+        <p>&copy; yunger INC</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

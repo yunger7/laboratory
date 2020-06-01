@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento DOM + Functions</title>
+    <style>
+        body{
+            
+            font: normal 15pt Bahnschrift Light;
+            background: rgb(44, 97, 133);
+        }
+                
+    </style>
+</head>
+<body>
+    <h1>Calculando!</h1>
+    <div id="mult">
+            <h2>Multiplicação:</h2>
+            <input type="number" name="txt_mult_1" id="txt_mult_1">
+            <input type="number" name="txt_mult_2" id="txt_mult_2">
+            <input type="button" value="Multiplicar" id="but_mult">
+            <p class="res" id="res_mult">Resultado</p>
+    </div>   
+
+    <script>
+        var mult_lis = window.document.getElementById('but_mult')
+        mult_lis.addEventListener('click',multiplicar)
+
+        function multiplicar(){
+            var t_mult_1 = window.document.getElementById('txt_mult_1')
+            var t_mult_2 = window.document.querySelector('input#txt_mult_2')
+            var res_mult = window.document.getElementById('res_mult')
+            var n_mult_1 = Number(t_mult_1.value)
+            var n_mult_2 = Number(t_mult_2.value)
+            var mult = n_mult_1 * n_mult_2
+            res_mult.innerHTML = `A multiplicação entre ${n_mult_1} e ${n_mult_2} resulta em <strong>${mult}</strong>`
+        }
+    </script>
+</body>
+</html>

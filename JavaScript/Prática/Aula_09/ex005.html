@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+       body {
+            background-color: rgb(49, 38, 3);
+            color:goldenrod;
+            font:normal 15pt Consolas;
+        }
+        h1 {
+            color:gold;
+            font:normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p class="prg">Aqui vai o resultado</p>
+    <p class="prg">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique aqui!</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        /*
+        p1.style.font = 'normal 30pt Arial'
+        corpo.style.backgroundColor = 'Black' //Tem a mesma função de window.document.body.style.backgroundColor = 'Black'
+        window.document.write(p1.innerHTML)
+        */
+
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'black'
+        d.innerHTML = 'but it was me <strong> DIO! </strong>'
+        */
+
+        /*
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'
+        */
+
+        /*
+        var d = window.document.getElementsByClassName('prg')[0]
+        d.style.background = 'black'
+        */
+
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'black'
+
+    </script>
+</body>
+</html>

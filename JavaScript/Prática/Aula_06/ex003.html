@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro Script</title>
+    <style>
+        body {
+            background-color: rgb(66, 52, 7); /*Comentário em CSS */
+            color:goldenrod;
+            font:normal 15pt Arial;
+        }
+        h1 {
+            color:gold;
+            font:normal 20pt Impact;
+        }
+    </style>
+</head>
+<body>
+    <h1>Salve salve, mundo !</h1> <!--É assim que é feito um coentário em HTML-->
+    <p>Primeiro código com as aulas do curso em vídeo</p>
+    <script>
+        var n1 = Number(prompt("Insira o primeiro número: "))
+        var n2 = Number(prompt("Insira o segundo número: "))      
+        var s = n1 + n2
+        var n3 = Number.parseFloat(prompt("Insira mais um número"))
+        var n4 = Number.parseFloat(prompt("Agora o último!"))
+        var s2 = n3 + n4
+        var resultado_concatenado = String(s) + s2.toString()
+        alert("A soma dos dois primeiros e a soma dos dois ultimos em concatenação é: " + resultado_concatenado)
+    </script>
+</body>
+</html>

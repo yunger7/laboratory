@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro?</title>
+    <style>
+        body {
+            background-color: rgb(90, 60, 0);
+            font: normal 15pt consolas;
+            color: goldenrod;
+        }
+
+        h1 {
+            color: rgba(255, 217, 0, 0.801);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estrangeiro ou Brasileiro?</h1>
+    <p>Digite seu país de origem: </p>
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar() {
+            var input_nac = document.getElementById('nacionalidade')
+            var res = document.querySelector('div#res')
+            var nac = input_nac.value
+            nac = nac.toLowerCase()
+            if (nac == 'brasil') {
+                res.innerHTML = '<p>Você é <strong>brasileiro!</strong></p>'
+            } else {
+                res.innerHTML = '<p>Você é <strong>estrangeiro!</strong></p>'
+            }
+        }
+    </script>
+</body>
+
+</html>

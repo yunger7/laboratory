@@ -1,0 +1,27 @@
+body {
+    font: normal 15pt Consolas;
+    background: darkslategray;
+}
+section#caixa{
+    background: wheat;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295) ;
+}
+header{
+    color: whitesmoke;
+    text-align: center;
+}
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+}
+p.digite{
+    font: normal 17pt Consolas;
+}
+p#valor{
+    font: bold 20pt Consolas;
+}

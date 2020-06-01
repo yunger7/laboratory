@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CommandTesting2</title>
+    <style>
+        body {
+            background-color: rgb(66, 52, 7);
+            color:goldenrod;
+            font:normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var salário = Number.parseFloat(prompt("Digite seu salário:"))
+        alert(`Você ganha ${salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
