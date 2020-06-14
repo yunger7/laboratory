@@ -21,7 +21,7 @@ Existem 3 motivos por trás da criação desse repositório:
 *Em breve adicionarei os links com o material utilizado*
 - [x] Lógica de programação
 - [x] [Git e GitHub](Git%20e%20GitHub/Material-git-github.md)
-- [x] JavaScript Básico
+- [x] [JavaScript Básico](JavaScript/Material/Material-JavaScript-Basico.md)
 - [ ] HTML5 e CSS3 (Em andamento)
 - [ ] Wordpress
 - [ ] Python
