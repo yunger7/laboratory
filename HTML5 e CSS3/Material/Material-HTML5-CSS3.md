@@ -10,8 +10,6 @@ Aqui você encontra todos os materiais que encontrei e julguei útil para o apre
 * [Curso de HTML5 e CSS3 (by Gustavo Guanabara)](https://www.youtube.com/watch?v=epDCjksKMok&list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o) :brazil:
 * [Learn HTML5 and CSS3 from scratch (by Freecodecamp.org)](https://youtu.be/mU6anWqZJcc) :earth_americas:
 
----
-
 ## Sites
 * [Freecodecamp](https://www.freecodecamp.org/learn) :earth_americas:
 * [Scrimba](https://scrimba.com/) :earth_americas:
