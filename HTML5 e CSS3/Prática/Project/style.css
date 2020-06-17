@@ -54,6 +54,8 @@ nav {
 
     background-color: #f4f4f4;
     padding: 20px;
+
+    z-index: 1;
 }
 
 nav ul {
@@ -136,4 +138,46 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+/* Pseudo Classes*/
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input:focus {
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+
+form input:valid {
+    border: 4px solid #71d300;
+}
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+article p::first-letter {
+    font-size: 2em;
+}
+
+section.join p::first-letter {
+    font-size: 1.5em;
+}
+
+p::selection {
+    background-color: #F63232;
+    color: white;
+}
+
+article p::after {
+    content: '...'
 }
