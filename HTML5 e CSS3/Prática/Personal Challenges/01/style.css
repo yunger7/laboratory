@@ -1,0 +1,285 @@
+/* Montserrat Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --black: #242423;
+    --mat-black: #333533;
+    --light-white: #e8eddf;
+    --light-gray: #cfdbd5;
+    --gold: #f5cb5c;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    background-color: var(--mat-black);
+    color: var(--light-gray);
+}
+
+header h1 {
+    margin: 0;
+    padding: 5px;
+
+    text-align: center;
+    background-color: var(--black);
+    color: var(--gold);
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+
+    margin: 0 15px;
+
+    background-color: var(--black);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+nav ul {
+    display: flex;
+
+    padding: 0;
+
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 10px;
+}
+
+nav li {
+    list-style: none;
+    max-width: fit-content;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--light-white);
+
+    display: block;
+    transition: 400ms;
+}
+
+nav li a:hover {
+    transform: scale(1.1);
+    color: var(--gold);
+}
+
+nav input {
+    border-radius: 6px;
+
+    width: 200px;
+    height: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2em;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border: 6px solid var(--light-white);
+    border-radius: 8px;
+}
+
+main section div.sec-content {
+    display: flex;
+}
+
+main section h1#sec-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+main section article {
+    
+    width: 50%;
+}
+
+.line {
+    display: none;
+}
+
+article {
+    text-align: justify;
+
+    border: 3px solid var(--light-white);
+    border-radius: 8px;
+    margin: auto 5%;
+    box-shadow: 0 5px 3px #242423d0;
+    padding: 1.4em;
+    line-height: 1.6em;
+}
+
+article.bottom {
+    margin: 2em auto;
+    width: 40vw;
+}
+
+article h1{
+    text-align: center;
+    font-size: 1.6em;
+
+    margin: 4px auto;
+}
+
+footer {
+    margin: 0 2vw 2vw 1vh;
+
+    background-color: var(--black);    
+    text-align: center;
+
+    padding: 10px;
+
+    font-style: italic;
+    letter-spacing: 2px;
+    border-radius: 36px;
+
+    box-shadow: 0 5px 3px #242423d0;
+}
+
+footer span {
+    margin: 1.4em;
+}
+
+@media (min-width: 950px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        white-space: nowrap;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 20%;
+        margin: 0 50px;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    article.bottom {
+        max-width: 850px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 2vh !important;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        margin: 0;
+        border-radius: 0 0 6px 6px;
+    }
+
+    article {
+        width: 80vw !important;
+    }
+
+    main section {
+        border: none;
+    }
+    main section h1#sec-title {
+        font-size: 2.8em;
+    }
+
+    main section div.sec-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section article {
+        margin: 1em 0;
+    }
+
+    .line {
+        display: block;
+        width: 90vw;
+        color: var(--light-white);
+    }
+}
+
+@media (max-width: 620px) {
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        position: relative;
+        display: block;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 12px 0;
+        font-size: 1.8em;
+    }
+
+    nav li.search {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav input#search-bar {
+        height: 60px;
+    }
+
+    .line {
+        max-width: 400px;
+    }
+
+    article {
+        max-width: 350px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px){
+    section {
+        padding: 0;
+    }
+
+    article, article.bottom {
+        margin: 1em 0;
+        border: none;
+        background-color: var(--mat-black);
+        box-shadow: none;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
