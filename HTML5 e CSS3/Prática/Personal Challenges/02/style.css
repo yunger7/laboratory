@@ -68,6 +68,10 @@ main {
     box-shadow: 0 5px 5px #242423;
 }
 
+.line {
+    display: none;
+}
+
 .box {
     width: 50%;
     margin: 0 5%;
@@ -106,4 +110,95 @@ footer {
     text-align: center;
     font-style: italic;
     letter-spacing: 2px;
+}
+
+@media (max-width: 830px) {
+    main {
+        display: flex;
+        flex-direction: column;
+
+        width: 80vw;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    main section.box {
+        display: block;
+        width: 70vw;
+    }
+
+    main section article {
+        margin: 15px 0;
+    }
+
+    #line-article {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 675px) {
+    header {
+        justify-content: center;
+    }
+
+    header span {
+        display: none;
+    }
+
+    main {
+        border: 0;
+        box-shadow: none;
+    }
+
+    #line-header {
+        display: block;
+        width: 90%;
+        max-width: 95vw;
+        border-color: var(--gold);
+    }
+}
+
+@media (max-width: 545px) {
+    main {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-self: center;
+    }
+
+    main section.box {
+        width: inherit;
+
+        margin: 0;
+        align-self: center;
+    }
+
+    .left-box article, .right-box article {
+        border: none;
+        box-shadow: none;
+        text-align: left;
+    }
+
+    #line-article {
+        max-width: 80vw;
+    }
+}
+
+/* checkpoint */
+
+@media (min-width: 1600px) {
+    header {
+        margin: 0 auto;
+        max-width: 1600px;    
+    }
+
+    main {
+        /* Centralize content for larger screens */
+        margin: 20px auto;
+        max-width: 1600px;
+    }
 }
