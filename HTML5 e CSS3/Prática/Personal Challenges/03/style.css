@@ -1,3 +1,5 @@
+/* This one has major bugs*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
@@ -67,6 +69,8 @@ nav li {
 
 main {
     height: 80vh;
+    width: fit-content;
+    margin: auto 0;
     text-shadow: 2px 2px 1px #242423ce;
 }
 
@@ -78,7 +82,10 @@ main h2 {
 }
 
 main .content {
-    height: inherit;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #main-line {
@@ -118,6 +125,7 @@ footer {
     top: 42px;
     display: flex;
     justify-content: center;
+    margin: 16px 0;
 
     letter-spacing: 2px;
     font-style: italic;
