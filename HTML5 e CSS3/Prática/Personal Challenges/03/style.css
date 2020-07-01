@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --black: #242423;
+    --mat-black: #333533;
+    --light-white: #e8eddf;
+    --light-gray: #cfdbd5;
+    --gold: #f5cb5c;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--mat-black);
+    color: var(--light-gray);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+header h1{
+    margin: 0;
+    color: var(--gold);
+}
+
+.register{
+    width: 10vw;
+    height: fit-content;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    background-color: var(--black);
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 auto;
+}
+
+main {
+    height: 80vh;
+    text-shadow: 2px 2px 1px #242423ce;
+}
+
+main h2 {
+    margin: 16px 0;
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.8em;
+}
+
+main .content {
+    height: inherit;
+}
+
+#main-line {
+    width: 90vw;
+}
+
+.content section {
+    height: fit-content;
+    display: flex;
+    border-radius: 8px;
+}
+
+.content article {
+    margin: 46px 24px;
+    align-self: center;
+    height: fit-content;
+
+    padding: 16px;
+    text-align: center;
+    border: 5px solid var(--light-white);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #242423ce;
+}
+
+.content article h3 {
+    color: var(--gold);
+    font-size: 1.4em;
+    text-decoration: underline;
+}
+
+.content article p {
+    text-align: justify;
+}
+
+footer {
+    position: relative;
+    top: 42px;
+    display: flex;
+    justify-content: center;
+
+    letter-spacing: 2px;
+    font-style: italic;
+    text-shadow: 2px 2px 1px #242423ce;
+}
