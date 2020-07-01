@@ -98,7 +98,7 @@ main {
 }   
 
 article h2 {
-    margin: 0 0 0 15px;
+    margin: 0;
 
     text-align: center;
     font-size: 2em;
@@ -112,6 +112,7 @@ footer {
     letter-spacing: 2px;
 }
 
+/* Adjust content for smaller screens*/
 @media (max-width: 830px) {
     main {
         display: flex;
@@ -180,7 +181,7 @@ footer {
     .left-box article, .right-box article {
         border: none;
         box-shadow: none;
-        text-align: left;
+        text-align: center;
     }
 
     #line-article {
@@ -188,16 +189,29 @@ footer {
     }
 }
 
-/* checkpoint */
+@media (max-width: 200px) {
+    /* Are there even screens that small? */
+    header h1 {
+        font-size: 2em;
+    }
 
+    main section h2 {
+        font-size: 1.4em;
+    }
+
+    main section p {
+        text-align: left;
+    }
+}
+
+/* Centralize content for larger screens */
 @media (min-width: 1600px) {
     header {
         margin: 0 auto;
-        max-width: 1600px;    
+        width: 1600px;
     }
 
     main {
-        /* Centralize content for larger screens */
         margin: 20px auto;
         max-width: 1600px;
     }
