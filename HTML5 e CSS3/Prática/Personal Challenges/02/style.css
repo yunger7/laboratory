@@ -23,7 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
+    margin: 0 5vw;
 }
 
 header h1 {
@@ -205,14 +206,16 @@ footer {
 }
 
 /* Centralize content for larger screens */
+
 @media (min-width: 1600px) {
     header {
-        margin: 0 auto;
-        width: 1600px;
+        align-self: center;
+        width: 90%;
+        max-width: 1600px;
     }
 
     main {
-        margin: 20px auto;
-        max-width: 1600px;
+        align-self: center;
+        max-width: 1600px; 
     }
 }
