@@ -1,15 +1,38 @@
-*{
+* {
     font-family: verdana;
     margin: 0;
 }
 
-body{
+body {
     background: #eee;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
 
+
+.flex-container {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 100px;
+    flex: 1;
+}
+
+.one {
+    background: red;
+}
+
+.two {
+    background: blue;
+}
+
+.three {
+    background: green;
+}
