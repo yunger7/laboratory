@@ -1,38 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@keyframes button-hover{
+    50%{
+        width: 35%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes button-hover-mobile{
+    50%{
+        width: 40%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+:root {
+    --grey: #e0e1dd;
+    --light-blue: #778da9;
+    --blue: #415a77;
+    --dark-blue: #1b263b;
+    --darker-blue: #0d1b2a;
+}
+
 * {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     -moz-box-sizing: content-box;
     -ms-box-sizing: content-box;
     box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    background: url(img/code-background.jpg);
 }
 
 h1, #description, .sec-title{
     text-align: center;
+    color: var(--grey);
 }
 
 h1 {
     margin-bottom: 0;
+    font-size: 2.5em;
 }
 
 #description {
-    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
 }
 
 .sec-title {
+    margin: 18px 0;
     font-size: 1.5em;
     font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 6px 6px 3px rgb(13, 27, 42);
+}
+
+.header-sep {
+    max-width: 1000px;
 }
 
 form {
+    background-color: rgba(27, 39, 59, 0.9);
+    color: var(--grey);
+    padding: 20px 40px 20px 20px;
+    border-radius: 8px;
     width: 80%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .user-info {
@@ -49,7 +92,8 @@ form {
     margin: 10px 0;
     border:0px; 
     border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+    box-shadow: 2px 2px 5px 1px rgb(13, 27, 42);
+    background-color: var(--grey);
 }
 
 /* Removing arrows from 'age' input */
@@ -74,9 +118,11 @@ input[type="radio"]{
     width: 20px;
     height: 20px;
     vertical-align: middle;
+    background-color: var(--grey);
 }
 
 fieldset {
+    width: 99%;
     margin-top: 30px;
     border-radius: 8px;
 }
@@ -90,6 +136,7 @@ input[type="checkbox"]{
     width: 20px;
     height: 20px;
     vertical-align: middle;
+    background-color: var(--grey);
 }
 
 fieldset label {
@@ -99,9 +146,75 @@ fieldset label {
 textarea {
     width: 100%;
     max-width: 100%;
-    min-height: 155px;
+    min-width: 100%;
+    height: 100px;
+    min-height: 100px;
     padding: 10px;
     border-radius: 8px;
+    background-color: var(--grey);
+    box-shadow: 2px 2px 5px 1px rgb(13, 27, 42);
 }
 
+textarea::placeholder {
+    letter-spacing: 2px;
+}
 
+button[type="submit"]{
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px rgb(13, 27, 42);
+    background-color: var(--light-blue);
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    border: 0;
+    color: var(--darker-blue);
+}
+
+button[type="submit"]:hover {
+    animation-name: button-hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 550px){
+    form {
+        margin: 20px 0;
+        width: auto;
+    }
+
+    button[type="submit"]:hover {
+        animation-name: button-hover-mobile;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #title, .sec-title {
+        letter-spacing: normal;
+    }
+
+    .sec-title {
+        text-shadow: 4px 4px 3px rgb(13, 27, 42);
+    }
+
+    #title {
+        font-size: 2em;
+    }
+
+    #description {
+        font-size: 1.1em;
+        letter-spacing: normal;
+    }
+
+    .user-info .sec-title {
+        font-size: 1.7em;
+    }
+
+    .time-spent .sec-title {
+        font-size: 1.5em;
+    }
+}
