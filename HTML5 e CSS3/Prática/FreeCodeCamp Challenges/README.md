@@ -11,7 +11,7 @@ Here you can find all the challenges that i've completed from [the FreeCodeCamp 
 
 ## Challenge 2: Build a survey form
 
-* [Link to challengel(https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+* [Link to challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 * [Solution](https://codepen.io/yunger7/full/gOPQpQP)
 
 ## Challenge 3: Build a Product Landing Page
