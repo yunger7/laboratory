@@ -16,7 +16,7 @@
         <p>
     </header>
     <hr class="header-sep">
-    <form>
+    <form id="survey-form">
         <!-- User info -->
         <div class="user-info">
             <p class="sec-title">About you: </p>
@@ -44,19 +44,19 @@
             <!-- Table used for alignment and test purposes -->
             <table>
                 <tr>
-                    <td><input type="radio" name="company_time" id="op1"></td>
+                    <td><input type="radio" name="company_time" id="op1" value="1"></td>
                     <td><label for="op1">Less than a year</label></td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="company_time" id="op2"></td>
+                    <td><input type="radio" name="company_time" id="op2" value="2"></td>
                     <td><label for="op2">1 to 10 years</label></td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="company_time" id="op3"></td>
+                    <td><input type="radio" name="company_time" id="op3" value="3"></td>
                     <td><label for="op3">10 to 20 years</label></td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="company_time" id="op4"></td>
+                    <td><input type="radio" name="company_time" id="op4" value="4"></td>
                     <td><label for="op4">More than 20 years</label></td>
                 </tr>
             </table>
@@ -86,7 +86,7 @@
             <textarea id="additional-comments" cols="30" rows="10" placeholder="Type here..."></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 
