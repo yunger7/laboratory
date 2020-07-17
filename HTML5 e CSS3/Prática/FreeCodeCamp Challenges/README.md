@@ -7,11 +7,12 @@ Here you can find all the challenges that i've completed from [the FreeCodeCamp 
 ## Challenge 1: Build a tribute page
 
 * [Link to challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
-* [Solution (A Tribure to Ray Charles)](https://codepen.io/yunger7/full/ExPoWQK)
+* [Solution](https://codepen.io/yunger7/full/ExPoWQK)
 
 ## Challenge 2: Build a survey form
 
-(Work in progress)
+* [Link to challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+* [Solution](https://codepen.io/yunger7/full/gOPQpQP)
 
 ## Challenge 3: Build a Product Landing Page
 
