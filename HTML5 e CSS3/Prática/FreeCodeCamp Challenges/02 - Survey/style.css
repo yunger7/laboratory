@@ -1,4 +1,58 @@
-/* Removing arrows from 'age' */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, #description, .sec-title{
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+#description {
+    letter-spacing: 0.1em;
+}
+
+.sec-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.user-info {
+    width: 100%;
+}
+
+.user-info > * {
+    display: block;
+    width: 100% ;
+}
+
+.user-info input, .user-info select {
+    padding: 10px;
+    margin: 10px 0;
+    border:0px; 
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+}
+
+/* Removing arrows from 'age' input */
     /* Chrome, Safari, Edge, Opera */
     .user-info input[type="number"]::-webkit-outer-spin-button, 
     .user-info input[type="number"]::-webkit-inner-spin-button{
@@ -10,3 +64,44 @@
     input[type=number] {
         -moz-appearance: textfield;
     }
+
+table {
+    border-spacing: 8px 10px;
+}
+
+input[type="radio"]{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+fieldset {
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+fieldset legend {
+    font-size: 1.3em !important;
+}
+
+input[type="checkbox"]{
+    margin: 5px 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+fieldset label {
+    vertical-align: middle;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 155px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
