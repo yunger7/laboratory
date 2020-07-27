@@ -23,4 +23,7 @@ Existem 3 motivos por trás da criação desse repositório:
 - [x] [JavaScript Básico](JavaScript/Material/Material-JavaScript-Basico.md)
 - [ ] HTML5 e CSS3 (Em andamento)
 - [ ] Wordpress
+   - [x] Wordpress Básico (com Gutenberg)
+   - [ ] Segurança, performance e recursos avançados
+   - [ ] WooCommerce
 - [ ] Python
