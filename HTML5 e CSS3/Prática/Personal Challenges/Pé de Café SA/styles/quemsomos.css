@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: url(../img/quem-somos-background.jpg);
+    width: 100vw;
+    max-width: 2000px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+header .header-text {
+    width: inherit;
+    max-width: 1900px;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.534);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center; 
+}
+
+.header-text > * {
+    margin: 0 0 6% 10%;
+    font-size: 3em;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.4em;
+    font-family: 'Berkshire Swash', cursive;
+    color: var(--main-color);
+    letter-spacing: 0.05em;
+}
+
+main {
+    background: url(../img/coffee-top-background.png) no-repeat top center;
+    background-attachment: fixed;
+}
+
+.main-overlay {
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.sobre-text {
+    margin: 0 10px;
+    text-align: center;
+    max-width: 800px;
+    padding-left: 20px;
+}
+
+.sobre img.logo {
+    width: 100px;
+    height: auto;
+}
+
+.sobre img.side-img {
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.sobre-text p {
+    text-align: left;
+}
+
+.cafeterias {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding-right: 25px;
+}
+
+.cafeterias img.logo {
+    width: 100px;
+    height: auto;
+}
+
+.cafeterias h3 {
+    text-align: center;
+}
+
+.cafeterias p {
+    text-align: left;
+}
+
+.cafeterias img {
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.comodidades {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.comodidades h3 {
+    font-size: 2.8em;
+    margin-top: 0;
+    color: #DE6502;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.comodidades img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    /* Mudar a cor das imagens */
+    filter: invert(44%) sepia(23%) saturate(6135%) hue-rotate(8deg) brightness(95%) contrast(98%);
+}
+
+.comodidades ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.comodidades li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: url(../img/cafeterias-background.jpg) no-repeat center;
+    width: 100vw;
+    max-width: 2000px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.header-text {
+    background: rgba(0, 0, 0, 0.603);
+    width: inherit;
+    max-width: 1900px;
+    margin: 0 auto;
+    height: inherit;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-text > * {
+    margin: 0 0 1.7% 10%;
+}
+
+.header-text h1 {
+    font-size: 3em;
+    font-family: 'Berkshire Swash', cursive;
+    color: var(--main-color);
+    letter-spacing: 0.05em;
+}
+
+.main-bg-img {
+    background: url(../img/coffee-corner-background.png) no-repeat right bottom;
+    background-attachment: fixed;
+}
+
+.main-overlay {
+    background-color: rgba(255, 255, 255, 0.582);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+main h2 {
+    font-size: 2em;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 0;
+    color: #DE6502;
+    letter-spacing: 0.05em;
+}
+
+table, th, td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}

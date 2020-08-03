@@ -1,0 +1,159 @@
+@media screen and (max-width: 800px){
+    /* Quem somos */
+    .sobre, .cafeterias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-text {
+        padding: 0;
+    }
+
+    .sobre h3, .cafeterias h3 {
+        margin: 20px 20px;
+    }
+
+    .sobre p, .cafeterias p {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .side-img {
+        width: 80vw;
+    }
+
+    .comodidades h3 {
+        margin-bottom: 20px;
+    }
+
+    .comodidades ul {
+        flex-direction: column;
+    }
+
+    .comodidades li {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    /* Main */
+    .nav-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.logo {
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer .footer-text {
+        flex-shrink: 1;
+    }
+
+    .copyright p {
+        margin: 0 auto;
+    }
+
+    /* Home */
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .welcome-text {
+        max-width: 500px !important;
+        margin: 0 auto;
+    }
+
+    .welcome img {
+        align-self: center;
+        margin: 0;
+        width: 80vw;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .cafeterias-text {
+        max-width: 500px !important;
+    }
+
+    .cafeterias-img ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cafeterias-img img {
+        width: 80vw;
+        margin-bottom: 2em;
+    }
+
+    .reviews {
+        max-width: 500px !important;
+        margin: 0 auto;
+    }
+
+    .reviews ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews img {
+        width: 30vw;
+        height: auto;
+        margin-bottom: 2em;
+    }
+
+    /* Contato */
+    input, textarea {
+        margin: 10px 0;
+        padding: 1.1em;
+    }
+
+    input[type="submit"]{
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /* Main */
+    h1 {
+        font-size: 2.5em !important;
+    }
+
+    header .header-text > * {
+        margin: 5px 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    footer p {
+        max-width: 300px;
+    }
+
+    /* Cafeterias */
+    .main-cafeterias {
+        margin: 0 25px;
+        padding: 25px 0;
+        flex-shrink: 1;
+    }
+
+    /* Quem somos */
+    .comodidades h3 {
+        font-size: 2em;
+    }
+}
