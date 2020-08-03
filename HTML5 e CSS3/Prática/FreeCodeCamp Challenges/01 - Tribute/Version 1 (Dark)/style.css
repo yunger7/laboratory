@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	background-color: var(--black);
 	color: var(--light-gray);
@@ -28,7 +28,7 @@ header {
 .header-text {
 	margin-top: 5%;
 	font-size: 3.4vw;
- 	position: absolute;
+  position: absolute;
 	left: 5%;
 	color: var(--light-white);
 }
@@ -44,8 +44,8 @@ header {
 }
 
 img.background {
-    z-index: -1;
-    max-width: 100%;
+  z-index: -1;
+  max-width: 100%;
 	height: auto;
 	align-self: center;
 } 
@@ -132,7 +132,7 @@ blockquote p {
 }
 
 #img-div img {
-    display: block;
+  display: block;
 	max-width: 100%;
 	height: auto;
 	border-radius: 10px;
@@ -188,7 +188,7 @@ blockquote p {
 
 	#tribute-info {
 		max-width: 1400px;
-  		margin: 0 auto;
+    margin: 0 auto;
 	}
 
 	.content-grid {
