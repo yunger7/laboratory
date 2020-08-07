@@ -17,6 +17,10 @@ Existem 3 motivos por trás da criação desse repositório:
 ---
 
 ## Assuntos com interesse:
+
+### **Disclaimer**
+As items marcados como concluído são para significar que eu já me familiarizei e sei uma quantidade razoável do conteúdo. Mas, como toda tecnologia no mercado, você nunca **conclui** seus estudos.
+
 *Em breve adicionarei os links com o material utilizado*
 - [x] [Lógica de programação](Lógica%20de%20Programação/Material-logica-de-programacao.md)
 - [x] [Git e GitHub](Git%20e%20GitHub/Material-git-github.md)
@@ -37,8 +41,22 @@ Existem 3 motivos por trás da criação desse repositório:
    - [x] Arrays
    - [x] Funções
    - [x] Introdução a objetos
-- [ ] HTML5 e CSS3 (Em andamento)
-   - [x] 
+- [ ] HTML5
+   - [x] What is HTML
+   - [x] Histoy
+   - [x] Tags, attributes and other basic html concepts
+   - [x] Forms
+   - [x] Semantics
+ - [x] CSS3
+    - [x] What is CSS
+    - [x] History
+    - [x] Classes & Selectors
+    - [x] Layout & Position
+    - [x] Flexbox
+    - [x] Grid
+    - [x] Animations
+    - [x] Pseudo Classes & Elements
+    - [x] Intro to Media Queries
 - [ ] Wordpress
 - [ ] Database
 - [ ] Php
