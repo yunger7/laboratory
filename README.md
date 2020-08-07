@@ -24,12 +24,12 @@ As items marcados como concluído são para significar que eu já me familiarize
 *Em breve adicionarei os links com o material utilizado*
 - [x] [Lógica de programação](Lógica%20de%20Programação/Material-logica-de-programacao.md)
 - [x] [Git e GitHub](Git%20e%20GitHub/Material-git-github.md)
-   - [x] What is Git and how it works
-   - [x] Git and GitHub history
-   - [x] Repository, clone, branch, issues, commits, checkput and revet, etc.
-   - [x] Using markdown
+   - [x] O que é Git e como ele funciona
+   - [x] História do Git and GitHub
+   - [x] Repositórios, clone, branch, issues, commits, checkout and revert commits, etc.
+   - [x] Usando markdown
    - [x] GitHub desktop
-   - [x] Git on console (Basic commands)
+   - [x] Git no console (Comandos básicos)
    - [ ] GitHub Pages
 - [x] [JavaScript Básico](JavaScript/Material/Material-JavaScript-Basico.md)   
    - [x] História
@@ -42,21 +42,21 @@ As items marcados como concluído são para significar que eu já me familiarize
    - [x] Funções
    - [x] Introdução a objetos
 - [x] HTML5
-   - [x] What is HTML
+   - [x] O que HTML
    - [x] Histoy
    - [x] Tags, attributes and other basic html concepts
    - [x] Forms
    - [x] Semantics
  - [x] CSS3
     - [x] What is CSS
-    - [x] History
+    - [x] História
     - [x] Classes & Selectors
     - [x] Layout & Position
     - [x] Flexbox
     - [x] Grid
     - [x] Animations
     - [x] Pseudo Classes & Elements
-    - [x] Intro to Media Queries
+    - [x] Intro a Media Queries
 - [ ] Wordpress
    - [x] WordPress básico (usando Gutenberg)
       - [x] História e evolução
