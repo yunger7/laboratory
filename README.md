@@ -41,7 +41,7 @@ As items marcados como concluído são para significar que eu já me familiarize
    - [x] Arrays
    - [x] Funções
    - [x] Introdução a objetos
-- [ ] HTML5
+- [x] HTML5
    - [x] What is HTML
    - [x] Histoy
    - [x] Tags, attributes and other basic html concepts
@@ -58,6 +58,13 @@ As items marcados como concluído são para significar que eu já me familiarize
     - [x] Pseudo Classes & Elements
     - [x] Intro to Media Queries
 - [ ] Wordpress
+   - [x] WordPress básico (usando Gutenberg)
+      - [x] História e evolução
+      - [x] Temas
+      - [x] Plugins
+      - [x] Criação de site usando Astra
+   - [ ] Segurança, performance e recursos avançados
+   - [ ] WooCommerce
 - [ ] Database
 - [ ] Php
 - [ ] Bootstrap
