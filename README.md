@@ -40,4 +40,8 @@ Existem 3 motivos por trás da criação desse repositório:
 - [ ] HTML5 e CSS3 (Em andamento)
    - [x] 
 - [ ] Wordpress
+- [ ] Database
+- [ ] Php
+- [ ] Bootstrap
+- [ ] Java
 - [ ] Python
