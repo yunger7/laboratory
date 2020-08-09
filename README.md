@@ -23,7 +23,7 @@ As items marcados como concluído são para significar que eu já me familiarize
 
 *Em breve adicionarei os links com o material utilizado*
 - [x] [Lógica de programação](Lógica%20de%20Programação/Material-logica-de-programacao.md)
-- [x] [Git e GitHub](Git%20e%20GitHub/Material-git-github.md)
+- [x] [Git e GitHub](Git%20e%20GitHub)
    - [x] O que é Git e como ele funciona
    - [x] História do Git and GitHub
    - [x] Repositórios, clone, branch, issues, commits, checkout and revert commits, etc.
@@ -31,7 +31,7 @@ As items marcados como concluído são para significar que eu já me familiarize
    - [x] GitHub desktop
    - [x] Git no console (Comandos básicos)
    - [ ] GitHub Pages
-- [x] [JavaScript Básico](JavaScript/Material/Material-JavaScript-Basico.md)   
+- [x] [JavaScript Básico](JavaScript)   
    - [x] História
    - [x] Comandos básicos
    - [x] Operadores
