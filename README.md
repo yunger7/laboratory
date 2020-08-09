@@ -22,7 +22,7 @@ Existem 3 motivos por trás da criação desse repositório:
 As items marcados como concluído são para significar que eu já me familiarizei e sei uma quantidade razoável do conteúdo. Mas, como toda tecnologia no mercado, você nunca **conclui** seus estudos.
 
 *Em breve adicionarei os links com o material utilizado*
-- [x] [Lógica de programação](Lógica%20de%20Programação/Material-logica-de-programacao.md)
+- [x] [Lógica de programação](Lógica%20de%20Programação)
 - [x] [Git e GitHub](Git%20e%20GitHub)
    - [x] O que é Git e como ele funciona
    - [x] História do Git and GitHub
