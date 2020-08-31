@@ -1,19 +1,14 @@
 # Material JavaScript Básico
 
-Aqui você encontra todos os materiais que encontrei e julguei útil para o aprendizado de JavaScript Básico.
+Aqui você encontra todos os materiais que encontrei e julguei útil para o aprendizado de PHP e MySQL.
 
 ---
 
 ## Vídeos
-* [Curso Grátis de JavaScript e ECMAScript (by Curso em Vídeo)](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1) :brazil:
-   > _Esse curso incrível dirigido pelo Gustavo Guanabara com o patrocínio da Google é a melhor porta de entrada na programação._
-* [Modern JavaScript Tutorial (by The Net Ninja)](https://www.youtube.com/watch?v=iWOYAxlnaww&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc) :earth_americas:
-* [Learn JavaScript - Full Course for Beginners (by Freecodecamp.org)](https://www.youtube.com/watch?v=PkZNo7MFNFg) :earth_americas:
+* [PHP & MySQL (The Net Ninja)](https://www.youtube.com/watch?v=pWG7ajC_OVo&list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o) :earth_americas:
+   > _Esse foi o curso que mais me ajudou, e gerou no final um projeto muito interessante para revisar os conceitos aprendidos_
+* [Curso MySQL (Curso em vídeo)](https://www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r) :brazil:
 
 ## Sites
-* [Codecademy](https://www.codecademy.com/learn/introduction-to-javascript) :earth_americas:
-* [w3schools](https://www.w3schools.com/jsref/default.asp) :earth_americas:
-* [Scrimba](https://scrimba.com/) :earth_americas:
-
-## Apps
-* [Mimo](https://getmimo.com/) :earth_americas:
+* [SQL - w3schools](https://www.w3schools.com/sql/default.asp) :earth_americas:
+* [PHP - w3schools](https://www.w3schools.com/php/default.asp) :earth_americas:
