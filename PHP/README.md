@@ -1,4 +1,4 @@
-# Material JavaScript Básico
+# Material PHP & MySQL Básico
 
 Aqui você encontra todos os materiais que encontrei e julguei útil para o aprendizado de PHP e MySQL.
 
