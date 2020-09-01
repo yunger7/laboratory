@@ -6,7 +6,7 @@ $email = $title = $ingredients = '';
 $errors = array('email' => '', 'title' => '', 'ingredients' => '');
 
 // FORM VALIDATION //
-// this basically checking if the submit input was initialized
+// this checking if the submit input was initialized
 if (isset($_POST['submit'])) {
 	// check if email is empty
 	if (empty($_POST['email'])) {
