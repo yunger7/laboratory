@@ -6,7 +6,7 @@ $email = $title = $ingredients = '';
 $errors = array('email' => '', 'title' => '', 'ingredients' => '');
 
 // FORM VALIDATION //
-// this checking if the submit input was initialized
+// this basically checking if the submit input was initialized
 if (isset($_POST['submit'])) {
 	// check if email is empty
 	if (empty($_POST['email'])) {
@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
 
 <section class="container grey-text">
 	<h4 class="center">Add a Pizza</h4>
-	<form action="add.php" method="POST" class="white">
+	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" class="white">
 		<label>Your Email:</label>
 		<input type="text" name="email" value="<?php echo htmlspecialchars($email) ?>">
 		<div class="red-text"><?php echo $errors['email'] ?></div>
@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
 		<input type="text" name="ingredients" value="<?php echo htmlspecialchars($ingredients) ?>">
 		<div class="red-text"><?php echo $errors['ingredients'] ?></div>
 		<div class="center">
-		<input type="submit" name="submit" value="Submit" class="btn brand z-depth-0">
+			<input type="submit" name="submit" value="Submit" class="btn brand z-depth-0">
 		</div>
 	</form>
 </section>
