@@ -14,7 +14,7 @@ if ($_SESSION["status"] != "ok") {
     <h1 class="h4 ml-4">Sistema de Agenda</h1>
     <ul class="mr-4 list-unstyled">
       <li class="d-inline mr-2">Olá <?php echo $_SESSION["user"]; ?>!</li>
-      <li class="d-inline"><a href="config/sair.php" class="btn btn-danger">Sair</a></li>
+      <li class="d-inline"><a href="config/sair.php" class="btn btn-outline-danger">Sair</a></li>
     </ul>
   </header>
   <nav>
