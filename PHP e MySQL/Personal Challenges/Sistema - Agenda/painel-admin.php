@@ -30,7 +30,7 @@ $usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
   </nav>
   <section class="mt-4">
     <h1 class="h3 text-center">Cadastrar pessoa</h1>
-    <form action="#" method="POST" class="p-5 w-75 bg-light mx-auto d-flex flex-column" style="max-width: 600px; border-radius: 15px;">
+    <form action="config/cadusuario.php" method="POST" class="p-5 w-75 bg-light mx-auto d-flex flex-column" style="max-width: 600px; border-radius: 15px;">
       <label for="nome" style="margin-bottom: 0.2em;">Nome: </label>
       <input class="form-control mb-2" type="text" name="nome" id="nome" placeholder="Digite o nome" required>
       <label for="login" style="margin-bottom: 0.2em;">Login: </label>
