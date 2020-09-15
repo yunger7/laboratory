@@ -23,7 +23,7 @@ mysqli_close($conn);
 
 <body style="width: initial; height: initial; overflow: initial;">
   <header class="my-4 d-flex justify-content-between align-items-center">
-    <h2 class="h4 ml-4">Sistema de Agenda</h2>
+    <h2 class="h4 ml-4"><span><img src="images/agenda.svg" alt="Logo" width="50" height="50" class="mb-1 mr-2"></span>Sistema de Agenda</h2>
     <ul class="mr-4 list-unstyled">
       <li class="d-inline mr-2">Olá <?php echo $_SESSION["user"]; ?>!</li>
       <li class="d-inline"><a href="config/sair.php" class="btn btn-outline-danger">Sair</a></li>
@@ -67,10 +67,10 @@ mysqli_close($conn);
         <?php foreach ($usuarios as $usuario) : ?>
           <tr>
             <th scope="row"><?php echo $usuario['id']; ?></th>
-            <td><?php echo $usuario['nome'];?></td>
-            <td><?php echo $usuario['login'];?></td>
-            <td><?php echo $usuario['senha'];?></td>
-            <td><?php echo $usuario['tipo'];?></td>
+            <td><?php echo $usuario['nome']; ?></td>
+            <td><?php echo $usuario['login']; ?></td>
+            <td><?php echo $usuario['senha']; ?></td>
+            <td><?php echo $usuario['tipo']; ?></td>
             <td>
               <a href="config/editar.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
               <form action="config/excluir.php" method="POST" class="d-inline">
