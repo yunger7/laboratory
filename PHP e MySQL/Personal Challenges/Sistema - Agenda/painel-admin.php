@@ -33,7 +33,7 @@ mysqli_close($conn);
     <?php include 'templates/menu.php'; ?>
   </nav>
   <section class="mt-4">
-    <h1 class="h3 text-center">Cadastrar pessoa</h1>
+    <h1 class="h3 text-center">Cadastrar usuário</h1>
     <form action="config/cadusuario.php" method="POST" class="p-5 w-75 bg-light mx-auto d-flex flex-column" style="max-width: 600px; border-radius: 15px;">
       <label for="nome" style="margin-bottom: 0.2em;">Nome: </label>
       <input class="form-control mb-2" type="text" name="nome" id="nome" placeholder="Digite o nome" required>
@@ -52,13 +52,14 @@ mysqli_close($conn);
   </section>
   <hr>
   <section>
-    <table class="table text-center">
+    <table class="table table-hover text-center">
       <thead>
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Nome</th>
           <th scope="col">Login</th>
           <th scope="col">Senha</th>
+          <th scope="col">Tipo</th>
           <th scope="col">Configurações</th>
         </tr>
       </thead>
@@ -66,9 +67,10 @@ mysqli_close($conn);
         <?php foreach ($usuarios as $usuario) : ?>
           <tr>
             <th scope="row"><?php echo $usuario['id']; ?></th>
-            <td><?php echo $usuario['nome']; ?></td>
-            <td><?php echo $usuario['login']; ?></td>
-            <td><?php echo $usuario['senha']; ?></td>
+            <td><?php echo $usuario['nome'];?></td>
+            <td><?php echo $usuario['login'];?></td>
+            <td><?php echo $usuario['senha'];?></td>
+            <td><?php echo $usuario['tipo'];?></td>
             <td>
               <a href="config/editar.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
               <form action="config/excluir.php" method="POST" class="d-inline">
