@@ -11,6 +11,10 @@ $sql = "SELECT * FROM usuario ORDER BY id" or die(mysqli_error($conn));
 $resultado = mysqli_query($conn, $sql);
 $usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
 
+// LIBERAR MEMÓRIA
+mysqli_free_result($resultado);
+mysqli_close($conn);
+
 ?>
 
 <!DOCTYPE html>

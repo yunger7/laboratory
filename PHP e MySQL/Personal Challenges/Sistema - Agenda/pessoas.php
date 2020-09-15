@@ -5,12 +5,6 @@ if ($_SESSION["status"] != "ok") {
   header('location:index.php');
 }
 
-// BUSCAR REGISTROS
-include('config/conecta.php');
-$sql = "SELECT * FROM usuario ORDER BY id" or die(mysqli_error($conn));
-$resultado = mysqli_query($conn, $sql);
-$usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
