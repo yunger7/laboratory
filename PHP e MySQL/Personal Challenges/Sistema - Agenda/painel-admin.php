@@ -70,8 +70,8 @@ mysqli_close($conn);
             <td><?php echo $usuario['login']; ?></td>
             <td><?php echo $usuario['senha']; ?></td>
             <td>
-              <a href="editar.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
-              <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" class="d-inline">
+              <a href="config/editar.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
+              <form action="config/excluir.php" method="POST" class="d-inline">
                 <input type="hidden" name="id-excluir" value="<?php echo $usuario['id']; ?>">
                 <input type="submit" value="Excluir" class="btn btn-danger">
               </form>
