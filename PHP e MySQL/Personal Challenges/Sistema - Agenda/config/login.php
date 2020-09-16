@@ -17,16 +17,16 @@
     $_SESSION['status'] = 'ok';
 
     echo "
-    <script language='javascript' type='text/javascript'>
-    location.href = '../agenda.php';
-    </script>
+      <script language='javascript' type='text/javascript'>
+        location.href = '../agenda.php';
+      </script>
     ";
   } else {
     echo "
-    <script language='javascript' type='text/javascript'>
-    alert('Login ou senha incorretos! Tente novamente!');
-    location.href = '../index.php';
-    </script>
+      <script language='javascript' type='text/javascript'>
+        alert('Login ou senha incorretos! Tente novamente!');
+        location.href = '../index.php';
+      </script>
     ";
   }
   mysqli_close($conn);

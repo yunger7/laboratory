@@ -60,7 +60,7 @@ mysqli_close($conn);
           <th scope="col">Login</th>
           <th scope="col">Senha</th>
           <th scope="col">Tipo</th>
-          <th scope="col">Configurações</th>
+          <th scope="col">Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -72,8 +72,8 @@ mysqli_close($conn);
             <td><?php echo $usuario['senha']; ?></td>
             <td><?php echo $usuario['tipo']; ?></td>
             <td>
-              <a href="config/editar.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
-              <form action="config/excluir.php" method="POST" class="d-inline">
+              <a href="config/editar-usuario.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
+              <form action="config/excluir-usuario.php" method="POST" class="d-inline">
                 <input type="hidden" name="id-excluir" value="<?php echo $usuario['id']; ?>">
                 <input type="submit" value="Excluir" class="btn btn-danger">
               </form>

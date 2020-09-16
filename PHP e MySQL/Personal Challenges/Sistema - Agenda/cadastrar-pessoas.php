@@ -68,8 +68,8 @@ if ($_SESSION["status"] != "ok") {
           <label for="tipo">Tipo: </label>
           <select name="tipo" id="tipo" class="custom-select" required>
             <option disabled selected>Selecione uma opção</option>
-            <option value="fisica">Física</option>
-            <option value="juridica">Jurídica</option>
+            <option value="Fisica">Física</option>
+            <option value="Juridica">Jurídica</option>
           </select>
         </div>
       </div>

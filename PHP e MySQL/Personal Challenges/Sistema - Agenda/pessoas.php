@@ -5,13 +5,24 @@ if ($_SESSION["status"] != "ok") {
   header('location:index.php');
 }
 
+include('config/conecta.php');
+
+// BUSCAR REGISTROS
+$sql = "SELECT id, tipo, nome, celular, email FROM pessoa ORDER BY nome";
+$resultado = mysqli_query($conn, $sql);
+$pessoas = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
+
+// LIBERAR MEMÓRIA
+mysqli_free_result($resultado);
+mysqli_close($conn);
+
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <?php include 'templates/header.php'; ?>
 
-<body>
+<body style="width: initial; height: initial; overflow: initial;">
   <header class="my-4 d-flex justify-content-between align-items-center">
     <h2 class="h4 ml-4"><span><img src="images/agenda.svg" alt="Logo" width="50" height="50" class="mb-1 mr-2"></span>Sistema de Agenda</h2>
     <ul class="mr-4 list-unstyled">
@@ -65,11 +76,35 @@ if ($_SESSION["status"] != "ok") {
       </div>
     </form>
   </section>
-  <hr>
-  <div class="text-center"><a href="cadastrar-pessoas.php" class="btn btn-primary w-25">Cadastrar pessoas</a></div>
-  <section>
-    
-  </section>
+  <hr class="m-0">
+  <div class="text-center bg-light"><a href="cadastrar-pessoas.php" class="btn btn-primary w-25 my-3">Cadastrar pessoas</a></div>
+  <main>
+    <table class="table table-hover text-center">
+      <thead>
+        <tr>
+          <th scope="col">Tipo</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Celular</th>
+          <th scope="col">Email</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach($pessoas as $pessoa): ?>
+          <tr>
+            <td><?php echo $pessoa['tipo']; ?></td>
+            <td><?php echo $pessoa['nome']; ?></td>
+            <td><?php echo $pessoa['celular']; ?></td>
+            <td><?php echo $pessoa['email']; ?></td>
+            <td>
+              <a href="config/editar-pessoa.php?id=<?php echo $pessoa['id']; ?>" class="btn btn-warning">Editar</a>
+              <a href="config/excluir-pessoa.php?id=<?php echo $pessoa['id']; ?>" class="btn btn-danger">Excluir</a>
+            </td>
+          </tr>
+        <?php endforeach; ?>
+      </tbody>
+    </table>
+  </main>
   <?php include 'templates/footer.php'; ?>
 </body>
 
