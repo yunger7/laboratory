@@ -20,7 +20,8 @@ Here you can find all the challenges that i've completed from [the FreeCodeCamp 
 
 ## Challenge 4: Build a Technical Documentation Page
 
-(Work in progress)
+* [Link to challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
+* [Solution](https://codepen.io/yunger7/pen/LYNBRpP)
 
 ## Challenge 5: Build a Personal Portfolio Webpage
 
