@@ -64,7 +64,7 @@ mysqli_close($conn);
     </ul>
     <form action="config/procurar.php" method="GET" class="mr-4">
       <div class="input-group">
-        <input type="text" name="procurar" class="form-control" placeholder="Procurar">
+        <input type="text" name="nome-procurar" class="form-control" placeholder="Procurar">
         <div class="input-group-append">
           <button type="submit" class="btn btn-outline-success">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
