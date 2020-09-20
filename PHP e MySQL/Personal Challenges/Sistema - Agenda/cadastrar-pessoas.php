@@ -16,13 +16,13 @@ if ($_SESSION["status"] != "ok") {
     <h2 class="h4 ml-4"><span><img src="images/agenda.svg" alt="Logo" width="50" height="50" class="mb-1 mr-2"></span>Sistema de Agenda</h2>
     <ul class="mr-4 list-unstyled">
       <li class="d-inline mr-2">Olá <?php echo $_SESSION["user"]; ?>!</li>
-      <li class="d-inline"><a href="pessoas.php" class="btn btn-secondary">Voltar</a></li>
+      <li class="d-inline mr-1"><a href="pessoas.php" class="btn btn-secondary">Voltar</a></li>
       <li class="d-inline"><a href="config/sair.php" class="btn btn-outline-danger">Sair</a></li>
     </ul>
   </header>
   <hr>
   <main>
-    <h1 class="h4 text-center my-4">Cadastrar pessoa</h1>
+    <h1 class="h3 text-center my-3">Cadastrar pessoa</h1>
     <form action="config/cadpessoa.php" method="POST" class="p-5 mx-4 w-50 mx-auto bg-light rounded">
       <div class="form-row">
         <div class="form-group col-md-7">
@@ -74,7 +74,7 @@ if ($_SESSION["status"] != "ok") {
         </div>
       </div>
       <div class="d-flex justify-content-center align-items-center">
-        <input type="submit" value="Cadastrar" class="btn btn-success w-25 mx-auto">
+        <input type="submit" value="Cadastrar" class="btn btn-success w-25 mx-auto my-2">
       </div>
     </form>
   </main>

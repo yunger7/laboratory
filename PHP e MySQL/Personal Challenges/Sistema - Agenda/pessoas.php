@@ -34,6 +34,7 @@ mysqli_close($conn);
     <?php include 'templates/menu.php'; ?>
   </nav>
   <section id="top-bar" class="my-3 d-flex justify-content-between align-items-center">
+    <a href="cadastrar-pessoas.php" class="btn btn-info ml-4">Cadastrar pessoas</a>
     <ul class="m-0 ml-3 list-unstyled">
       <li class="d-inline font-weight-bold"><a href="#" class="text-decoration-none">A | </a></li>
       <li class="d-inline font-weight-bold"><a href="#" class="text-decoration-none">B | </a></li>
@@ -77,7 +78,6 @@ mysqli_close($conn);
     </form>
   </section>
   <hr class="m-0">
-  <div class="text-center bg-light"><a href="cadastrar-pessoas.php" class="btn btn-primary w-25 my-3">Cadastrar pessoas</a></div>
   <main>
     <table class="table table-hover text-center">
       <thead>
@@ -97,7 +97,8 @@ mysqli_close($conn);
             <td><?php echo $pessoa['celular']; ?></td>
             <td><?php echo $pessoa['email']; ?></td>
             <td>
-              <a href="config/editar-pessoa.php?id=<?php echo $pessoa['id']; ?>" class="btn btn-warning">Editar</a>
+              <a href="config/verpessoa.php?id=<?php echo $pessoa['id']?>" class="btn btn-primary">Ver</a>
+              <a href="config/editar-pessoa.php?id=<?php echo $pessoa['id']; ?>" class="btn btn-info">Editar</a>
               <a href="config/excluir-pessoa.php?id=<?php echo $pessoa['id']; ?>" class="btn btn-danger">Excluir</a>
             </td>
           </tr>
