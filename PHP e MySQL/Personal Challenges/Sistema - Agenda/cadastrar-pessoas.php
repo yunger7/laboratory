@@ -27,7 +27,7 @@ if ($_SESSION["status"] != "ok") {
       <div class="form-row">
         <div class="form-group col-md-7">
           <label for="nome">Nome: </label>
-          <input type="text" name="nome" id="nome" class="form-control" required>
+          <input type="text" name="nome" id="nome" value="<?php  ?>" class="form-control" required>
         </div>
         <div class="form-group col-md-5">
           <label for="email">Email: </label>
@@ -73,8 +73,9 @@ if ($_SESSION["status"] != "ok") {
           </select>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <input type="submit" value="Cadastrar" class="btn btn-success w-25 mx-auto my-2">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <a href="pessoas.php" class="btn btn-secondary w-25">Cancelar</a>
+        <input type="submit" value="Cadastrar" class="btn btn-success w-25">
       </div>
     </form>
   </main>

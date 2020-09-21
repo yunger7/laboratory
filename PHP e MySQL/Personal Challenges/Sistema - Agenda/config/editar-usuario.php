@@ -6,47 +6,40 @@ if ($_SESSION["status"] != "ok") {
   header('location: ../index.php');
 }
 
-$idEditar = $_GET['id'];
+$idEditar = $_GET['id'] ?? $_POST['id-editar'];
 
 // EDITAR REGISTRO
 if(isset($_POST['submit'])){
-  $id = $_POST['id-editar'];
   $nome = $_POST['nome'];
   $login = $_POST['login'];
   $senha = $_POST['senha'];
   $tipo = $_POST['tipo'];
 
-  $sql = "UPDATE usuario SET nome = '$nome', login = '$login', senha = '$senha', tipo = '$tipo' WHERE id = '$id'";
+  $sql = "UPDATE usuario SET nome = '$nome', login = '$login', senha = '$senha', tipo = '$tipo' WHERE id = '$idEditar'";
 
   if(mysqli_query($conn, $sql)){
-    echo "<script language = 'javascript' type = 'text/javascript'>
-    alert('Usuário editado com sucesso!');
-    window.location.href = '../usuarios.php';
-    </script>";
+    echo "
+      <script language = 'javascript' type='text/javascript'>
+        alert('Usuário editado com sucesso!');
+        window.location.href = '../usuarios.php';
+      </script>";
   } else {
-    echo "<script language = 'javascript' type = 'text/javascript'>
-    alert('Não foi possível editar o usuário');
-    window.location.href = '../usuarios.php';
-    </script>";
+    echo "
+      <script language = 'javascript' type='text/javascript'>
+        alert('Não foi possível editar o usuário');
+        window.location.href = '../usuarios.php';
+      </script>";
   }
 
   mysqli_close($conn);
 }
 
 // BUSCAR REGISTROS
-
-// 1. Todos os usuários
-$sql = "SELECT * FROM usuario ORDER BY id" or die(mysqli_error($conn));
-$resultado = mysqli_query($conn, $sql);
-$usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
-
-// 2. Usuário para editar
 $sql = "SELECT * FROM usuario WHERE id = '$idEditar'" or die(mysqli_error($conn));
 $resultadoUsuario = mysqli_query($conn, $sql);
 $usuarioEditar = mysqli_fetch_assoc($resultadoUsuario);
 
 // LIBERAR MEMÓRIA
-mysqli_free_result($resultado);
 mysqli_free_result($resultadoUsuario);
 mysqli_close($conn);
 
@@ -61,15 +54,16 @@ mysqli_close($conn);
     <h2 class="h4 ml-4"><span><img src="../images/agenda.svg" alt="Logo" width="50" height="50" class="mb-1 mr-2"></span>Sistema de Agenda</h2>
     <ul class="mr-4 list-unstyled">
       <li class="d-inline mr-2">Olá <?php echo $_SESSION["user"]; ?>!</li>
-      <li class="d-inline"><a href="../pessoas.php" class="btn btn-secondary">Voltar</a></li>
-      <li class="d-inline"><a href="config/sair.php" class="btn btn-outline-danger">Sair</a></li>
+      <li class="d-inline mr-1"><a href="../usuarios.php" class="btn btn-secondary">Voltar</a></li>
+      <li class="d-inline"><a href="sair.php" class="btn btn-outline-danger">Sair</a></li>
     </ul>
   </header>
   <nav>
     <?php include '../templates/menu.php'; ?>
   </nav>
-  <section class="mt-4">
-    <h1 class="h3 text-center">Editar usuário</h1>
+  <hr>
+  <main class="mt-4">
+    <h1 class="h3 text-center my-3">Editar usuário</h1>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="p-5 w-75 bg-light mx-auto d-flex flex-column" style="max-width: 600px; border-radius: 15px;">
       <label for="nome" style="margin-bottom: 0.2em;">Nome: </label>
       <input class="form-control mb-2" type="text" name="nome" id="nome" value="<?php echo $usuarioEditar['nome']; ?>" placeholder="Digite o nome" required>
@@ -95,42 +89,7 @@ mysqli_close($conn);
         <input type="submit" name="submit" value="Editar usuário" class="btn btn-warning w-25">
       </div>
     </form>
-  </section>
-  <hr>
-  <section>
-    <table class="table text-center">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Login</th>
-          <th scope="col">Senha</th>
-          <th scope="col">Tipo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php foreach ($usuarios as $usuario) : ?>
-          <?php if($usuario['id'] == $idEditar){ ?>
-            <tr style="background-color: #ECECEC;">
-              <th scope="row"><?php echo $usuario['id']; ?></th>
-              <td><?php echo $usuario['nome'];?></td>
-              <td><?php echo $usuario['login'];?></td>
-              <td><?php echo $usuario['senha'];?></td>
-              <td><?php echo $usuario['tipo'];?></td>
-           </tr>
-          <?php } else { ?>
-          <tr>
-            <th scope="row"><?php echo $usuario['id']; ?></th>
-            <td><?php echo $usuario['nome'];?></td>
-            <td><?php echo $usuario['login'];?></td>
-            <td><?php echo $usuario['senha'];?></td>
-            <td><?php echo $usuario['tipo'];?></td>
-          </tr>
-          <?php } ?>
-        <?php endforeach; ?>
-      </tbody>
-    </table>
-  </section>
+  </main>
   <?php include '../templates/footer.php'; ?>
 </body>
 
