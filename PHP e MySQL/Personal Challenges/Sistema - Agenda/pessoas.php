@@ -2,7 +2,7 @@
 session_start();
 
 if ($_SESSION["status"] != "ok") {
-  header('location:index.php');
+  header('location: index.php');
 }
 
 include('config/conecta.php');
