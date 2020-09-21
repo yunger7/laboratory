@@ -5,7 +5,7 @@ O hub do meu conhecimento adquirido como autodidata.
 
 ## :ballot_box_with_check: Finalidade desse repositório
 
-Ser um autodidata não significa aprender sem a ajuda de ninguem, significa aventurar-se e buscar o conteúdo, que com certeza está em abundância graças a internet. Portanto, o objetivo desse repositório é compartilhar um pouco desse conteúdo e incentivar você a compartilhar também seu conhecimento e materiais encontrados ao longo da sua jornada, seja comigo ou com toda a internet. *__Essa__* é a mentalidade de um autodidata.
+Ser um autodidata não significa aprender sem a ajuda de ninguem, significa aventurar-se e buscar o conteúdo, que com certeza está em abundância graças a internet. Portanto, o objetivo desse repositório é compartilhar um pouco desse conteúdo e incentivar você a compartilhar também seu conhecimento, materiais e experiências adquiridas ao longo da sua jornada, seja comigo ou com toda a internet. *__Essa__* é a mentalidade de um autodidata.
 
 ## :books: História desse repositório
 
