@@ -28,7 +28,7 @@ As items marcados como concluído são para significar que eu já me familiarize
 - [x] HTML5
 - [x] CSS3
 - [x] Wordpress
-- [ ] Database
+- [ ] MySQL
 - [ ] Php
 - [ ] Bootstrap
 - [ ] Java
