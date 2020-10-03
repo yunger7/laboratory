@@ -4,12 +4,12 @@ Here you can find all the projects that i've completed from [the FreeCodeCamp we
 
 ---
 
-## Project 1: Build a tribute page
+## Project 1: Build a Tribute Page
 
 * [Project details](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
 * [Solution](https://codepen.io/yunger7/full/ExPoWQK)
 
-## Project 2: Build a survey form
+## Project 2: Build a Survey Form
 
 * [Project details](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 * [Solution](https://codepen.io/yunger7/full/gOPQpQP)
