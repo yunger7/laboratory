@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP Documentation</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>PHP Documentation</h1>
+    </header>
+    <ul><a href="#Introduction" class="nav-link"><li>Introduction</li></a>
+      <a href="#What_you_should_already_know" class="nav-link"><li>What you should already know</li></a>
+      <a href="#What_Can_PHP_Do?" class="nav-link"><li>What Can PHP Do?</li></a>
+      <a href="#Basic_PHP_Syntax" class="nav-link"><li>Basic PHP Syntax</li></a>
+      <a href="#Declaring_PHP_Variables" class="nav-link"><li>Declaring PHP Variables</li></a>
+      <a href="#Variables_Scope" class="nav-link"><li>Variables Scope</li></a>
+      <a href="#Data_Types" class="nav-link"><li>Data Types</li></a>
+      <a href="#Conditional_Statements" class="nav-link"><li>Conditional Statements</li></a>
+      <a href="#Loops" class="nav-link"><li>Loops</li></a>
+      <a href="#Functions" class="nav-link"><li>Functions</li></a>
+      <a href="#Reference" class="nav-link"><li>Reference</li></a>
+    </ul>
+  </nav>
+    <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP. PHP 7 is the latest stable release.</p>
+      <h3>What is PHP?</h3>
+      <ul>
+        <li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+        <li>PHP is a widely-used, open source scripting language</li>
+        <li>PHP scripts are executed on the server</li>
+        <li>PHP is free to download and use</li>
+      </ul>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>
+        <h2>What you should already know</h2>
+      </header>
+      <p>Before you continue you should have a basic understanding of the following: </p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+    <section class="main-section" id="What_Can_PHP_Do?">
+      <header>
+        <h2>What Can PHP Do?</h2>
+      </header>
+      <ul>
+        <li>PHP can generate dynamic page content</li>
+        <li>PHP can create, open, read, write, delete, and close files on the server</li>
+        <li>PHP can collect form data</li>
+        <li>PHP can send and receive cookies</li>
+        <li>PHP can add, delete, modify data in your database</li>
+        <li>PHP can be used to control user-access</li>
+        <li>PHP can encrypt data</li>
+      </ul>
+      <p>With PHP you are not limited to output HTML. You can output images, PDF files, and even Flash movies. You can also output any text, such as XHTML and XML.</p>
+    </section>
+    <section class="main-section" id="Basic_PHP_Syntax">
+      <header>
+        <h2>Basic PHP Syntax</h2>
+      </header>
+      <p>
+        <h2>A PHP script starts with &lt;?php and ends with ?&gt;</h2>
+      </p>
+      <code>
+        <p>&lt;?php</p>
+        <p>// PHP code goes here</p>
+        <p>?&gt;</p>
+      </code>
+      <p>The default file extension for PHP files is ".php".</p>
+      <p>A PHP file normally contains HTML tags, and some PHP scripting code</p>
+    </section>
+    <section class="main-section" id="Declaring_PHP_Variables">
+      <header>
+        <h2>Declaring PHP Variables</h2>
+      </header>
+      <p>In PHP, a variable starts with the $ sign, followed by the name of the variable:</p>
+      <h3>Rules for PHP variables</h3>
+      <ul>
+        <li>A variable starts with the $ sign, followed by the name of the variable</li>
+        <li>A variable name must start with a letter or the underscore character</li>
+        <li>A variable name cannot start with a number</li>
+        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+        <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+      </ul>
+      <h4>For example</h4>
+      <code>
+        <p>&lt;?php</p>
+        <p>$txt = &quot;Hello world!&quot;;</p>
+        <p>$x = 5;</p>
+        <p>$y = 10.5;</p>
+        <br />
+        <p>echo $txt /* This is how you output data */</p>
+        <p>?&gt;</p>
+      </code>
+    </section>
+    <section class="main-section" id="Variables_Scope">
+      <header>
+        <h2>Variables Scope</h2>
+      </header>
+      <p>In PHP, variables can be declared anywhere in the script.</p>
+      <p>The scope of a variable is the part of the script where the variable can be referenced/used.</p>
+      <p>PHP has three different variable scopes:</p>
+      <ul>
+        <li>Local</li>
+        <li>Global</li>
+        <li>Static</li>
+      </ul>
+      <h3>Global and Local Scope</h3>
+      <p>A variable declared <strong>outside</strong> a function has a GLOBAL SCOPE and can only be accessed outside a function:</p>
+      <h4>Example</h4>
+      <p>Variable with global scope:</p>
+      <code>
+        <p>&lt;?php</p>
+        <p>$x = 5; // global scope</p>
+        <br/>
+        <p>function myTest() {</p>
+        <p> // using x inside this function will generate an error</p>
+        <p> echo &quot;&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;&quot;;</p>
+        <p>}</p>
+        <p>myTest();</p>
+        <br/>
+        <p>echo &quot;&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;&quot;;</p>
+        <p>?&gt;</p>
+      </code>
+      <p>A variable declared <strong>within</strong> a function has a LOCAL SCOPE and can only be accessed within that function:</p>
+      <h4>Example</h4>
+      <p>Variable with local scope:</p>
+      <code>
+        <p>&lt;?php</p>
+        <p>function myTest() {</p>
+        <p> $x = 5; // local scope</p>
+        <p> echo &quot;&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;&quot;;</p>
+        <p>}</p>
+        <p>myTest();</p>
+        <br/>
+        <p>// using x outside the function will generate an error</p>
+        <p>echo &quot;&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;&quot;;</p>
+        <p>?&gt;</p>
+      </code>
+      <h3>The global Keyword</h3>
+      <p>The global keyword is used to access a global variable from within a function. To do this, use the global keyword before the variables (inside the function):</p>
+      <h4>Example</h4>
+      <code>
+        <p>&lt;?php</p>
+        <p>$x = 5;</p>
+        <p>$y = 10;</p>
+        <br/>
+        <p>function myTest() {</p>
+        <p> global $x, $y;</p>
+        <p> $y = $x + $y;</p>
+        <p>}</p>
+        <br/>
+        <p>myTest();</p>
+        <p>echo $y; // outputs 15</p>
+        <p>?&gt;</p>
+      </code>
+      <h3>The static Keyword</h3>
+      <p>Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted. We need it for a further job.</p>
+      <p>To do this, use the static keyword when you first declare the variable:</p>
+      <code>
+        <p>&lt;?php</p>
+        <p>function myTest() {</p>
+        <p> static $x = 0;</p>
+        <p> echo $x;</p>
+        <p> $x++;</p>
+        <p>}</p>
+        <br/>
+        <p>myTest();</p>
+        <p>myTest();</p>
+        <p>myTest();</p>
+        <p>?&gt;</p>
+      </code>
+      <p>Then, each time the function is called, that variable will still have the information it contained from the last time the function was called.</p>
+      <p><strong>Note:</strong> The variable is still local to the function</p>
+    </section>
+    <section class="main-section" id="Data_Types">
+      <header>
+        <h2>Data Types</h2>
+      </header>
+      <p>Variables can store data of different types, and different data types can do different things.</p>
+      <p>PHP supports the following data types:</p>
+      <ul>
+        <li>String</li>
+        <li>Integer</li>
+        <li>Float (floating point numbers - also called double)</li>
+        <li>Boolean</li>
+        <li>Array</li>
+        <li>Object</li>
+        <li>NULL</li>
+        <li>Resource</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Conditional_Statements">
+      <header>
+        <h2>Conditional Statements</h2>
+      </header>
+      <p>Very often when you write code, you want to perform different actions for different conditions. You can use conditional statements in your code to do this.</p>
+      <p>In PHP we have the following conditional statements:</p>
+      <ul>
+        <li><span>if</span> statement - executes some code if one condition is true</li>
+        <li><span>if...else</span> statement - executes some code if a condition is true and another code if</li>
+        <li><span>if...elseif...else</span> statement - executes different codes for more than two conditions</li>
+        <li><span>switch</span> statement - selects one of many blocks of code to be executed</li>
+      </ul>
+      <div>
+        <h3>The if Statement</h3>
+        <p>The <span>if</span> statement executes some code if one condition is true.</p>
+        <h4>Syntax</h4>
+        <code>
+          <p>if (condition) {</p>
+          <p> code to be executed if condition is true;</p>
+          <p>}</p>
+        </code>
+      </div>
+      <div>
+        <h3>The if...else Statement</h3>
+        <p>The <span>if...else</span> statement executes some code if a condition is true and another code if that condition is false.</p>
+        <h4>Syntax</h4>
+        <code>
+          <p>if (condition) {</p>
+          <p> code to be executed if condition is true;</p>
+          <p>} else {</p>
+          <p> code to be executed if condition is false;</p>
+          <p>}</p>
+        </code>
+      </div>
+      <div>
+        <h3>The if...elseif...else Statement</h3>
+      </div>
+      <p>The <span>if...elseif...else</span> statement executes different codes for more than two conditions.</p>
+      <h4>Syntax</h4>
+      <code>
+        <p>if (condition) {</p>
+        <p>  code to be executed if this condition is true;</p>
+        <p>} elseif (condition) {</p>
+        <p>  code to be executed if first condition is false and this condition is true;</p>
+        <p>} else {</p>
+        <p>  code to be executed if all conditions are false;</p>
+        <p>}</p>
+      </code>
+    </section>
+    <section class="main-section" id="Loops">
+      <header>
+        <h2>Loops</h2>
+      </header>
+      <p>Often when you write code, you want the same block of code to run over and over again a certain number of times. So, instead of adding several almost equal code-lines in a script, we can use loops.</p>
+      <p>Loops are used to execute the same block of code again and again, as long as a certain condition is true.</p>
+      <div>
+        <h3>While Loop</h3>
+        <p>The <span>while</span> loop executes a block of code as long as the specified condition is true.</p>
+        <h4>Syntax</h4>
+        <code>
+          <p>while (condition is true) {</p>
+          <p>  code to be executed;</p>
+          <p>}</p>
+        </code>
+      </div>
+      <div>
+        <h3>Do...while Loop</h3>
+        <p>The <span>do...while</span> loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true.</p>
+        <h4>Syntax</h4>
+        <code>
+          <p>do {<p>
+          <p>  code to be executed;</p>
+          <p>} while (condition is true);</p>
+        </code>
+      </div>
+      <div>
+        <h3>For Loop</h3>
+        <p>The <span>for</span> loop is used when you know in advance how many times the script should run.</p>
+        <h4>Syntax</h4>
+        <code>
+          <p>for (init counter; test counter; increment counter) {</p>
+          <p>  code to be executed for each iteration;</p>
+          <p>}</p>
+        </code>
+        <p>Parameters:</p>
+        <ul>
+          <li><em>init counter</em>: Initialize the loop counter value</li>
+          <li><em>test counter</em>: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.</li>
+          <li><em>increment counter</em>: Increases the loop counter value</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Foreach Loop</h3>
+        <p>The <span>foreach</span> loop works only on arrays, and is used to loop through each key/value pair in an array.</p>
+        <h4>Syntax</h4>
+        <code>
+          <p>foreach ($array as $value) {</p>
+          <p>  code to be executed;</p>
+          <p>}</p>
+        </code>
+        <p>For every loop iteration, the value of the current array element is assigned to $value and the array pointer is moved by one, until it reaches the last array element.</p>
+      </div>
+    </section>
+    <section class="main-section" id="Functions">
+      <header><h2>Functions</h2></header>
+      <p>The real power of PHP comes from its functions.</p>
+      <p>PHP has more than 1000 built-in functions, and in addition you can create your own custom functions.</p>
+      <h3>PHP Built-in Functions</h3>
+      <p>PHP has over 1000 built-in functions that can be called directly, from within a script, to perform a specific task.</p>
+      <p>Please check out our PHP reference for a complete overview of the <a href="https://www.w3schools.com/php/php_ref_overview.asp" target="_blank">PHP built-in functions</a>.</p>
+      <h3>User Defined Functions</h3>
+      <p>Besides the built-in PHP functions, it is possible to create your own functions.</p>
+      <ul>
+        <li>A function is a block of statements that can be used repeatedly in a program.</li>
+        <li>A function will not execute automatically when a page loads.</li>
+        <li>A function will be executed by a call to the function.</li>
+      </ul>
+      <h3>Create a User Defined Function in PHP</h3>
+      <p>A user-defined function declaration starts with the word <span>function</span>:</p>
+      <h4>Syntax</h4>
+      <code>
+        <p>function functionName() {</p>
+        <p>  code to be executed;</p>
+        <p>}</p>
+      </code>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>
+        <h2>Reference</h2>
+      </header>
+      <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/php/default.asp" target="_blank">W3Schools</a></p>
+    </section>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
