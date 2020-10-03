@@ -1,6 +1,6 @@
 # FreeCodeCamp Projects
 
-Here you can find all the projects that i've completed from [the FreeCodeCamp website](www.freecodecamp.org) using the skills aquired from the **Responsive Web Design Certification (300 hours)**. There are 5 projects in total, which you can find links to below.
+Here you can find all the projects that i've completed from the[FreeCodeCamp website](www.freecodecamp.org) using the skills aquired from the **Responsive Web Design Certification (300 hours)**. There are 5 projects in total, which you can find links to below.
 
 ---
 
