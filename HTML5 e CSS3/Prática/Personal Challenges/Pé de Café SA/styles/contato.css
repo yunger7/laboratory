@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: url(../img/contato-background.jpg) no-repeat center;
+    width: 100vw;
+    max-width: 2000px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.header-text {
+    background: rgba(0, 0, 0, 0.541);
+    width: inherit;
+    max-width: 1900px;
+    height: inherit;
+    color: #fff;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-text > * {
+    margin: 0 0 1% 10%;
+    font-size: 3em;
+}
+
+.header-text h2 {
+    font-size: 3.5em;
+    font-family: 'Berkshire Swash', cursive;
+    color: var(--main-color);
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    font-size: 2.2em;
+    color: #DE6502;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background: url(../img/coffee-white-background.jpg) no-repeat left center;
+    background-attachment: fixed;
+}
+
+.main-overlay {
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+/* form > * {
+    display: block;
+} */
+
+input, textarea {
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+input[type="submit"]{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 500px; */
+    border-radius: 10px;
+}
+
+textarea {
+    width: 90%;
+    max-width: 1000px;
+    height: 100px;
+    min-height: 100px;
+}
+
+label {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 5px auto;
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 2000px;
+}

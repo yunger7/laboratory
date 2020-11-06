@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Yunger INC Form</h1>
+        <p id="description">Help us improve the company!
+        <p>
+    </header>
+    <hr class="header-sep">
+    <form id="survey-form">
+        <!-- User info -->
+        <div class="user-info">
+            <p class="sec-title">About you: </p>
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" id="name" placeholder="Type your name" required>
+            <label for="email" id="email-label">Email: </label>
+            <input type="email" id="email" placeholder="Type your email" required>
+            <label for="number" id="number-label">Age: </label>
+            <input type="number" id="number" min="12" max="150" placeholder="(Optional)">
+
+            <!-- Marital Status -->
+            <label for="dropdown">Marital status:</label>
+            <select id="dropdown">
+                <option>Married</>
+                <option>Single</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+            </select>
+            <br>
+        </div>
+        <hr>
+        <!-- Time spent on company -->
+        <div class="time-spent">
+            <p class="sec-title">How long have you been working with us?</p>
+            <!-- Table used for alignment and test purposes -->
+            <table>
+                <tr>
+                    <td><input type="radio" name="company_time" id="op1" value="1"></td>
+                    <td><label for="op1">Less than a year</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="company_time" id="op2" value="2"></td>
+                    <td><label for="op2">1 to 5 years</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="company_time" id="op3" value="3"></td>
+                    <td><label for="op3">5 to 10 years</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="company_time" id="op4" value="4"></td>
+                    <td><label for="op4">More than 10 years</label></td>
+                </tr>
+            </table>
+        </div>
+        <!-- What needs improvement -->
+        <div class="improvement">
+            <fieldset>
+                <legend class="sec-title">What do you want to see improved in the company?</legend>
+                <input type="checkbox" name="improvement" id="computers" value="1">
+                <label for="computers">Computers</label><br>
+                <input type="checkbox" name="improvement" id="comfort" value="2">
+                <label for="comfort">Comfort</label><br>
+                <input type="checkbox" name="improvement" id="salary" value="3">
+                <label for="salary">Salary</label><br>
+                <input type="checkbox" name="improvement" id="work-schedule" value="4">
+                <label for="work-schedule">Work Schedule</label><br>
+                <input type="checkbox" name="improvement" id="food" value="5">
+                <label for="food">Food</label><br>
+                <input type="checkbox" name="improvement" id="other" value="6">
+                <label for="other">Other</label><br>
+            </fieldset>
+        </div>
+
+        <!-- Additional comments -->
+        <div class="more">
+            <p class="sec-title">Additional comments</p>
+            <textarea id="additional-comments" cols="30" rows="10" placeholder="Type here..."></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>

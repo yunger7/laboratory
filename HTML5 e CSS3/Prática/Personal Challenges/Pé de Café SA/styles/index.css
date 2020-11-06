@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: url(../img/coffee-background.jpg) no-repeat center;
+    width: 100vw;
+    height: 500px;
+}
+
+.header-text {
+    background: rgba(0, 0, 0, 0.534);
+    width: inherit;
+    max-width: 1900px;
+    height: inherit;
+    color: #fff;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text p {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 0.1em;
+    font-size: 60px;
+    margin: 0;
+    color: var(--main-color);
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Berkshire Swash', cursive;
+    color: #fd7e14;
+}
+
+main {
+    background: url(../img/coffee-tile-background.png) repeat-y right, url(../img/coffee-tile-background.png) repeat-y left;
+    background-attachment: fixed;
+}
+
+.main-overlay {
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 15px;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+.welcome .welcome-text {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.welcome h2 {
+    margin-top: 60px;
+    margin-bottom: 0.25em;
+}
+
+.welcome p#chamada {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.welcome p.text {
+    line-height: 1.5em;
+}
+
+.welcome img {
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.cafeterias {
+    max-width: 2000px;
+    margin: 20px auto;
+}
+
+.cafeterias-text {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cafeterias-img ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.cafeterias-img li {
+    list-style: none;
+}
+
+.cafeterias-img img {
+    width: 28vw;
+    height: auto;
+    border-radius: 10px;
+    max-width: 600px !important;
+}
+
+.reviews {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.reviews h2 {
+    text-align: center;
+}
+
+.reviews ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.reviews li {
+    list-style: none;
+}

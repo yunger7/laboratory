@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+body {
+	font-family: 'Recursive', sans-serif;
+	margin: 0;
+	background-color: hsl(37, 42%, 80%);
+}
+
+header {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header-text {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	font-size: 2em;
+}
+
+.header-text h1 {
+	margin-bottom: 20px;
+	font-family: 'Merienda One', cursive;
+	color: #bb9457;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.63);
+}
+
+.header-text p {
+	font-size: 0.8em;
+	margin-top: 0;
+	color: #bb9457;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.63);
+}
+
+header img {
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+}
+
+blockquote {
+	text-align: center;
+	background-color: #bb9457;
+	padding: 15px;
+	margin: 0;
+	position: relative;
+	bottom: 5px;
+	font-family: 'Merienda One', cursive;
+}
+
+blockquote h2 {
+	margin-bottom: 10px;
+}
+
+blockquote p {
+	margin-top: 0;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2em;
+}
+
+hr {
+	max-width: 1200px;
+	height: 1px;
+	background-color: #432818;
+}
+
+article {
+	padding: 0 10px 0 10px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+#img-div {
+	text-align: center;
+}
+
+#img-div img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border: 2px solid #432818;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+}
+
+.more-info {
+	background-color: #bb9457;
+	padding: 5px;
+	text-align: center;
+	margin: 0 20px 20px 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.582);
+}
+
+.more-info a {
+	color: #432818;
+	transition: 400ms;
+}
+
+.more-info a:hover {
+	color: black;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Pé de Café SA</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contato.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <style>
+        input[type="submit"] {
+            background-color: #fd7e14;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #DE6502;
+        }
+
+        /* .containter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="../index.html" class="logo navbar-brand"><img src="../assets/coffee-logo.svg" alt="Logo"> Pé de
+                Café SA</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../src/cafeterias.html">Cafeterias</a></li>
+                <li><a href="../src/quemsomos.html">Quem somos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="header-text">
+            <h2>Fale conosco</h2>
+            <p>4002-8922</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-overlay">
+            <h1 style="margin-right: 75px;">Entre em contato</h1>
+            <form>
+                <div class="container">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+                </div>
+                <div class="container">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="Digite seu email">
+                </div>
+                <div class="container">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(opcional)">
+                </div>
+                <div class="container">
+                    <label for="mensagem">Sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem..."
+                        required></textarea>
+                </div>
+                <div class="container">
+                    <input type="submit" value="Enviar mensagem" class="btn btn-primary btn-lg">
+                </div>
+                <br /><br />
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright Pé de Café SA | Criado por <a href="https://github.com/yunger7" target="_blank">Luís
+                    Galete</a></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

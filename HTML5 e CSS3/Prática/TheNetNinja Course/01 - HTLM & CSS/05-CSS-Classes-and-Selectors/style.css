@@ -1,0 +1,59 @@
+/* p.error {
+    color:red;
+}
+
+p.success {
+    color: #0abe0a;
+}
+
+p.success.feedback {
+    border:1px dashed #0abe0a;;
+}
+
+#content {
+    background-color: #ebebeb;
+    padding: 20px;
+} */
+
+/* div .error{
+    background-color: #bb0808d8;
+} */
+
+/* a[href*="google"]{
+    border: 2px black solid;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+a[href$=".br"]{
+    color: white;
+    background-color: darkred;
+    border: 2px solid black;
+    text-decoration: none;
+} */
+
+#content {
+    color:lightsalmon;
+    border: 1px solid gray;
+    margin: 40px;
+    font-weight: bold;
+}
+
+div#content p {
+    border: inherit;
+    margin: inherit;
+    color: olive;
+}
+
+p {
+    color: red;
+}
+/* p {
+    color:red;
+}
+
+p {
+    color: blue;
+} */

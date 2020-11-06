@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    --black: #242423;
+    --mat-black: #333533;
+    --light-white: #e8eddf;
+    --light-gray: #cfdbd5;
+    --gold: #f5cb5c;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--mat-black);
+    color: var(--light-gray);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* padding: 5px 20px; */
+    margin: 0 5vw;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+header span {
+    align-self: center;
+    font-size: 2em;
+}
+
+header span a {
+    display: block;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+header span a:hover {
+    transform: scale(1.15);
+    color: var(--gold);
+}
+
+.content {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    height: 100%;
+
+    margin: 0 5vw;
+
+    border: 5px solid var(--gold);
+    border-radius: 8px;
+    box-shadow: 0 5px 5px #242423;
+}
+
+.line {
+    display: none;
+}
+
+.box {
+    width: 50%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-box {
+    justify-content: center;
+}
+
+.right-box {
+    justify-content: space-evenly;
+}
+
+.left-box article, .right-box article {
+    padding: 20px;
+
+    border: 5px solid var(--light-white);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #242423;
+
+    text-align: justify;
+}   
+
+article h2 {
+    margin: 0;
+
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* Adjust content for smaller screens*/
+@media (max-width: 830px) {
+    main {
+        display: flex;
+        flex-direction: column;
+
+        width: 80vw;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    main section.box {
+        display: block;
+        width: 70vw;
+    }
+
+    main section article {
+        margin: 15px 0;
+    }
+
+    #line-article {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 675px) {
+    header {
+        justify-content: center;
+    }
+
+    header span {
+        display: none;
+    }
+
+    main {
+        border: 0;
+        box-shadow: none;
+    }
+
+    #line-header {
+        display: block;
+        width: 90%;
+        max-width: 95vw;
+        border-color: var(--gold);
+    }
+}
+
+@media (max-width: 545px) {
+    main {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-self: center;
+    }
+
+    main section.box {
+        width: inherit;
+
+        margin: 0;
+        align-self: center;
+    }
+
+    .left-box article, .right-box article {
+        border: none;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    #line-article {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 200px) {
+    /* Are there even screens that small? */
+    header h1 {
+        font-size: 2em;
+    }
+
+    main section h2 {
+        font-size: 1.4em;
+    }
+
+    main section p {
+        text-align: left;
+    }
+}
+
+/* Centralize content for larger screens */
+
+@media (min-width: 1600px) {
+    header {
+        align-self: center;
+        width: 90%;
+        max-width: 1600px;
+    }
+
+    main {
+        align-self: center;
+        max-width: 1600px; 
+    }
+}
