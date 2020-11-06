@@ -29,7 +29,7 @@ Os items marcados como concluído são para significar que eu já me familiarize
 - [x] [CSS3](HTML5%20e%20CSS3)
 - [x] Wordpress
 - [x] [MySQL](PHP%20e%20MySQL)
-- [x] [Php](PHP%20e%20MySQL)
+- [x] [PHP](PHP%20e%20MySQL)
 - [x] Bootstrap
 - [ ] JavaScript Avançado
 - [ ] APIs
