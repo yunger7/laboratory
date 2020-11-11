@@ -1,6 +1,6 @@
 # Material JavaScript Básico
 
-Aqui você encontra todos os materiais que encontrei e julguei útil para o aprendizado de JavaScript Básico.
+Aqui você encontra algumas fontes para aprender JavaScript Básico.
 
 ---
 
@@ -8,6 +8,7 @@ Aqui você encontra todos os materiais que encontrei e julguei útil para o apre
 * [Curso Grátis de JavaScript e ECMAScript (Curso em Vídeo)](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1) :brazil:
 * [Modern JavaScript Tutorial (The Net Ninja)](https://www.youtube.com/watch?v=iWOYAxlnaww&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc) :earth_americas:
 * [Learn JavaScript - Full Course for Beginners (Freecodecamp.org)](https://www.youtube.com/watch?v=PkZNo7MFNFg) :earth_americas:
+* [Beginner's Series to JavaScript (Microsoft)](https://www.youtube.com/watch?v=_EDM5aPVLmo&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2)
 
 ## Sites
 * [Codecademy](https://www.codecademy.com/learn/introduction-to-javascript) :earth_americas:
