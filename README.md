@@ -21,7 +21,6 @@ Existem 3 motivos por trás da criação desse repositório:
 ### :no_entry: **Disclaimer**
 Os items marcados como concluído são para significar que eu já me familiarizei e sei uma quantidade razoável do conteúdo. Mas, como toda tecnologia, você nunca **conclui** seus estudos. O aprendizado é uma constante evolução.
 
-*Em breve adicionarei os links com o material utilizado*
 - [x] [Lógica de programação](Lógica%20de%20Programação)
 - [x] [Git e GitHub](Git%20e%20GitHub)
 - [x] [JavaScript Básico](JavaScript)   
