@@ -9,7 +9,7 @@ De qualquer forma, aqui você encontra alguns pontos de partida.
 ## Vídeos
 
 * [Curso Grátis de JavaScript e ECMAScript (Curso em Vídeo)](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1) :brazil:
-   > _Esse curso incrível dirigido pelo Gustavo Guanabara com o patrocínio da Google é a melhor porta de entrada na programação._
+   > _Esse curso dirigido pelo Gustavo Guanabara com o patrocínio da Google foi minha porta de entrada na programação._
 * [Curso de Lógica de Programação (Curso em Vídeo)](https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV) :brazil:
 
 ## Sites
