@@ -1,6 +1,6 @@
 # Material Git e GitHub
 
-Aqui você encontra todos os materiais que encontrei e julguei útil para o aprendizado de Git e GitHub.
+Aqui você encontra algumas fontes para aprender sobre Git e GitHub.
 
 ---
 
