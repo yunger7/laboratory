@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VueJS Tutorials</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h1>Data Binding</h1>
+    <p>Name: {{ name }}</p>
+    <input type="text" :value="name">
+    <a v-bind:href="website" target="_BLANK">Link to GitHub</a>
+    <p v-html="websiteTag"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

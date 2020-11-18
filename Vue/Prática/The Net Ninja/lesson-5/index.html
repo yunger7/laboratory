@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VueJS Tutorials</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h1>Events</h1>
+    <button v-on:click="add(1)">Add a year</button>
+    <button v-on:click="subtract(1)">Subtract a year</button>
+    <button @dblclick="add(10)">Add 10 years</button>
+    <button @dblclick="subtract(10)">Subtract 10 years</button>
+    <p>My age is {{ age }}</p>
+    <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
