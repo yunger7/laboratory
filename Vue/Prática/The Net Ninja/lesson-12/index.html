@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VueJS Tutorials</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h1>Looping through lists</h1>
+    <h2>Example 1</h2>
+    <ul>
+      <li v-for="videogame in videogames">{{ videogame }}</li>
+    </ul>
+
+    <h2>Example 2</h2>
+    <ul>
+      <li v-for="(character, index) in characters">{{ index }}. {{ character.name }} - {{ character.hobby }}</li>
+    </ul>
+
+    <h2>Example 3</h2>
+    <div v-for="videogame in videogames">
+      <h4>{{ videogame }}</h4>
+      <p>{{ videogame }}</p>
+    </div>
+
+    <h2>Example 4</h2>
+    <template v-for="character in characters">
+      <h4>{{ character.name }}</h4>
+      <p>{{ character.hobby }}</p>
+    </template>
+
+    <h2>Example 5</h2>
+    <template v-for="character in characters">
+      <div v-for="(val, key) in character">
+        <p>{{ key }} - {{ val }}</p>
+      </div>
+    </template>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
