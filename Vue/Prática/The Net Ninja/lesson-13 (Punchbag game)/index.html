@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VueJS Tutorials</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+  <div id="vue-app">
+    <!-- Bag image -->
+    <div id="bag" v-bind:class="{burst: ended}"></div>
+
+    <!-- Bag health -->
+    <div id="bag-health">
+      <div v-bind:style="{width: health + '%'}"></div>
+    </div>
+
+    <!-- Game controls -->
+    <div id="controls">
+      <button v-on:click="punch" v-show="!ended">Punch</button>
+      <button v-on:click="restart">Restart</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
