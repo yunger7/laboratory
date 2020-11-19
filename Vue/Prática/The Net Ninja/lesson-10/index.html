@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VueJS Tutorials</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h1>Dynamic CSS</h1>
+    <h2>Example 1</h2>
+    <!-- <div v-on:click="available = !available" v-bind:class="{available: available}">
+      <span>Ryuunosuke</span>
+    </div> -->
+    <h2>Example 2</h2>
+    <div v-bind:class="compClasses">
+      <button v-on:click="nearby = !nearby">Toggle Nearby</button>
+      <button v-on:click="available = !available">Toggle Available</button>
+      <span>Ryuunosuke</span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

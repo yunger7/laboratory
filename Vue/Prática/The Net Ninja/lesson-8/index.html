@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VueJS Tutorials</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h1>Keyboard Events</h1>
+    <label>Name</label>
+    <input type="text" v-model="name">
+    <span>{{ name }}</span>
+    <label>Age</label>
+    <input type="text" v-model="age">
+    <span>{{ age }}</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
