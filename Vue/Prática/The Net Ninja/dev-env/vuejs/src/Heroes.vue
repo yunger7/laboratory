@@ -1,21 +1,17 @@
 <template>
   <div id="app">
-    <h1>{{ title }}</h1>
-    <heroes></heroes>
+    <ul>
+      <li v-for="(hero, index) in heroes" :key="index">{{ hero }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
-import Heroes from './Heroes.vue'
-
 export default {
   name: 'app',
-  components: {
-    'heroes': Heroes
-  },
   data () {
     return {
-      title: 'Ninja App'
+      heroes: ['Saitama', 'Tatsumaki', 'Midoriya']
     }
   }
 }
