@@ -60,16 +60,19 @@ export default {
   },
   methods: {
     post: function() {
-      const axios = require("axios");
-
-      axios.post('http://jsonplaceholder.typicode.com/posts', {
-        title: this.blog.title,
-        body: this.blog.content,
-        userId: 1
-      }).then(function(data){
-        console.log(data);
-        this.submitted = true;
-      });
+      fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: JSON.stringify({
+          title: this.blog.author,
+          body: this.blog.content,
+          userId: 1
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+      })
+        .then(response => response.json())
+        .then(json => console.log(json));
     }
   }
 };
