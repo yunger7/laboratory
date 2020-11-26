@@ -3,16 +3,20 @@
     <h1>List of blogs</h1>
     <input type="text" v-model="search" placeholder="search blogs">
     <div v-for="(val, key) in filteredBlogs" v-bind:key="key" class="single-blog">
-      <h3>{{ val.title }}</h3>
+      <router-link v-bind:to="'/blog/' + val.id"><h3>{{ val.title }}</h3></router-link>
       <article>
         {{ val.body }}
       </article>
     </div>
+    
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    name: String
+  },
   data() {
     return {
       blogs: [],
@@ -20,13 +24,23 @@ export default {
     }
   },
   created() {
-    fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json()).then(json => {console.log(json); this.blogs = json;});
+    fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json()).then(data => {
+      this.blogs = data.slice(0, 10);
+    });
+  },
+  methods: {
+
   },
   computed: {
     filteredBlogs: function() {
       return this.blogs.filter((blog) => {
         return blog.title.match(this.search);
       });
+    }
+  },
+  filters: {
+    'to-uppercase': function(value) {
+      return value.toUpperCase();
     }
   }
 }
