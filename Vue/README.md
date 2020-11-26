@@ -1,4 +1,4 @@
-# Material PHP & MySQL Básico
+# Material Vue.JS
 
 Aqui você encontra algumas fontes para aprender sobre Vue.JS.
 
