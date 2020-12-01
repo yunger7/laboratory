@@ -15,5 +15,18 @@ const addForm = document.forms['add-book'];
 addForm.addEventListener('submit', function(event){
 	event.preventDefault();
 	const value = addForm.querySelector('input[type="text"]').value;
-	console.log(value);
+	
+	// Create elements
+	const li = document.createElement('li');
+	const bookName = document.createElement('span');
+	const deleteBtn = document.createElement('span');
+
+	// Add content
+	deleteBtn.textContent = 'delete';
+	bookName.textContent = value;
+
+	// Append to document
+	li.appendChild(bookName);
+	li.appendChild(deleteBtn);
+	list.appendChild(li);
 });
