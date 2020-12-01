@@ -35,7 +35,7 @@ addForm.addEventListener('submit', function(event){
 	list.appendChild(li);
 });
 
-// Hide list
+// Hide books
 const hideBox = document.querySelector('#hide');
 
 hideBox.addEventListener('change', function(event){
@@ -44,4 +44,21 @@ hideBox.addEventListener('change', function(event){
 	} else {
 		list.style.display = "initial";
 	}
+});
+
+// Filter books
+const searchBar = document.forms['search-books'].querySelector('input');
+
+searchBar.addEventListener('keyup', function(event){
+  const term = event.target.value.toLowerCase();
+  const books = list.getElementsByTagName('li');
+  Array.from(books).forEach(function(book){
+    const title = book.firstElementChild.textContent;
+    if (title.toLowerCase().indexOf(term) != -1) {
+	    // is on string
+			book.style.display = 'block';
+    } else {
+			book.style.display = 'none';
+		}
+  });
 });
