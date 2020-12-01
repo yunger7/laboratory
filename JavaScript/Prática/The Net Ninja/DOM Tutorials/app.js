@@ -34,3 +34,14 @@ addForm.addEventListener('submit', function(event){
 	li.appendChild(deleteBtn);
 	list.appendChild(li);
 });
+
+// Hide list
+const hideBox = document.querySelector('#hide');
+
+hideBox.addEventListener('change', function(event){
+	if (hideBox.checked) {
+		list.style.display = "none";
+	} else {
+		list.style.display = "initial";
+	}
+});
