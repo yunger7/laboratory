@@ -34,4 +34,3 @@ Os items marcados como concluído são para significar que eu já me familiarize
 - [x] APIs
 - [x] [Vue.JS](Vue)
 - [ ] React
-- [ ] Python
