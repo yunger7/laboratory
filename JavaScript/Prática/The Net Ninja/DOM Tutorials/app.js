@@ -1,8 +1,10 @@
-var buttons = document.querySelectorAll('#book-list .delete');
+const list = document.querySelector('#book-list ul');
 
-buttons.forEach(function(btn) {
-  btn.addEventListener('click', function(event){
-    const li = event.target.parentElement;
-    li.parentNode.removeChild(li);
-  })
+// Delete books
+list.addEventListener('click', function(event){
+	// Check if delete button is pressed
+	if (event.target.className == 'delete') {
+		const li = event.target.parentElement;
+		list.removeChild(li);
+	}
 });
