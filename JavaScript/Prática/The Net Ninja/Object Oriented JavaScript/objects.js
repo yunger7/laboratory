@@ -19,7 +19,21 @@ class User {
 	}
 }
 
+class Admin extends User {
+	deleteUser(user) {
+		users = users.filter(u => {
+			return u.email != user.email;
+		});
+	}
+}
+
 var userOne = new User('wiseholo@gmail.com', 'Holo');
 var userTwo = new User('cuteshiina@gmail.com', 'Shiina');
+var admin = new Admin('admin@gmail.com', 'Admin');
 
-userOne.login().updateScore().updateScore().logout();
+var users = [userOne, userTwo, admin];
+
+admin.deleteUser(userTwo);
+// userOne.deleteUser(userTwo); doesn't work
+
+console.log(users);
