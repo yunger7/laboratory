@@ -1,6 +1,0 @@
-[
-  {"name": "Pyra", "element": "Fire", "weapon": "Aegis Sword", "hasDriver": true},
-  {"name": "Mythra", "element": "Light", "weapon": "Aegis Sword", "hasDriver": true},
-  {"name": "Dromarch", "element": "Water", "weapon": "Dual Rings", "hasDriver": true},
-  {"name": "Nia", "element": "Water", "weapon": "Catalyst Scimitar", "hasDriver": false}
-]
