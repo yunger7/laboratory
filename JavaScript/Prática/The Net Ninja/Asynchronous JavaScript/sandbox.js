@@ -1,4 +1,4 @@
-const getBlades = (callback) => {
+const getBlades = (resource, callback) => {
   const request = new XMLHttpRequest();
 
   request.addEventListener('readystatechange', () => {
@@ -11,21 +11,13 @@ const getBlades = (callback) => {
     }
   })
   
-  request.open('GET', 'blades.json');
+  request.open('GET', resource);
   request.send();
 };
 
-console.log(1);
-console.log(2);
-
-getBlades((err, data) => {
-  console.log('callback fired');
-  if (err) {
-    console.log(err);
-  } else {
+getBlades('data/blades.json', (err, data) => {
+  console.log(data);
+  getBlades('data/drivers.json', (err, data) => {
     console.log(data);
-  }
+  });
 });
-
-console.log(3);
-console.log(4);
