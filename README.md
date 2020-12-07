@@ -30,7 +30,8 @@ Os items marcados como concluído são para significar que eu já me familiarize
 - [x] [MySQL](PHP%20e%20MySQL)
 - [x] [PHP](PHP%20e%20MySQL)
 - [x] Bootstrap
-- [ ] JavaScript Avançado
-- [x] APIs
+- [x] [JavaScript Avançado](JavaScript)
+- [x] [APIs](JavaScript)
 - [x] [Vue.JS](Vue)
+- [ ] Node.JS
 - [ ] React
