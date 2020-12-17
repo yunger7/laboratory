@@ -1,24 +1,20 @@
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
+const mongoose = require('mongoose');
+const Blade = require('./models/blade');
 
 // Express app
 const app = express();
 
+// Connect to MongoDB
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+.then(result => {console.log('Connected'); app.listen(3000);})
+.catch(err => console.log(err));
+
 // Register view engine
 app.set('view engine', 'ejs');
 // app.set('views', 'foldername');
-
-// Listen for requests
-app.listen(3000);
-
-// Logger middleware test
-// app.use((req, res, next) => {
-//   console.log('new request made:');
-//   console.log('host', req.hostname);
-//   console.log('path', req.path);
-//   console.log('method', req.method);
-//   next();
-// });
 
 // Middleware & Static files
 app.use(express.static('public'));
@@ -28,19 +24,24 @@ app.use(morgan('dev'));
 app.get('/', (req, res) => {
   // res.send('<h1>Home page</h1>');
   // res.sendFile('./views/index.html', { root: __dirname });
-  const blades = [
-    { name: 'Pyra', driver: 'Rex', element: 'Fire' },
-    { name: 'Mythra', driver: 'Rex', element: 'Light' },
-    { name: 'Dromarch', driver: 'Nia', element: 'Water' },
-    { name: 'Pandoria', driver: 'Zeke', element: 'Electric' }
-  ];
-  res.render('index', { title: 'Home', blades });
+  res.redirect('/blades');
 });
 
 app.get('/about', (req, res) => {
   // res.send('<h1>About page</h1>');
   // res.sendFile('./views/about.html', { root: __dirname});
   res.render('about', { title: 'About' })
+});
+
+// Blade routes
+app.get('/blades', (req, res) => {
+  Blade.find().sort({ name: 1 })
+  .then(result => {
+    res.render('index', { title: 'All blades', blades: result });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 });
 
 app.get('/blades/add', (req, res) => {
