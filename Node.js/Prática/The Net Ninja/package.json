@@ -1,5 +1,5 @@
 {
-  "name": "the-net-ninja",
+  "name": "testing",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,15 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "yunger",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "lodash": "^4.17.20",
     "mongoose": "^5.11.8",
-    "morgan": "^1.10.0"
+    "nodemon": "^2.0.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
