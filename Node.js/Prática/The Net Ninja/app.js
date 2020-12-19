@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const Blade = require('./models/blade');
+const bladeRoutes = require('./routes/bladeRoutes');
 
 // Express app
 const app = express();
@@ -35,53 +35,7 @@ app.get('/about', (req, res) => {
 });
 
 // Blade routes
-app.get('/blades', (req, res) => {
-  Blade.find().sort({ name: 1 })
-  .then(result => {
-    res.render('index', { title: 'All blades', blades: result });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-});
-
-app.post('/blades', (req, res) => {
-  const blade = new Blade(req.body);
-
-  blade.save()
-  .then(result => {
-    res.redirect('/blades');
-  })
-  .catch(err => {
-    console.log(err);
-  })
-});
-
-app.get('/blades/add', (req, res) => {
-  res.render('add', { title: 'Add a blade' });
-});
-
-app.get('/blades/:id', (req, res) => {
-  const id = req.params.id;
-
-  Blade.findById(id)
-  .then(result => {
-    res.render('details', { title: 'Blade details', blade: result });
-  })
-  .catch(err => {
-    console.log(err);
-  });
-});
-
-app.delete('/blades/:id', (req, res) => {
-  const id = req.params.id;
-
-  Blade.findByIdAndDelete(id)
-  .then(result => {
-    res.json({ redirect: '/blades' });
-  })
-  .catch(err => console.log(err));
-});
+app.use('/blades', bladeRoutes);
 
 // Redirects
 app.get('/about-us', (req, res) => {
