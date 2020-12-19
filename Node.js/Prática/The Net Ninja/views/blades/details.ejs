@@ -8,7 +8,9 @@
     <h2 class="name"><%= blade.name %></h2>
     <p class="driver">Driver: <%= blade.driver %></p>
     <p class="element">Element: <%= blade.element %></p>
-    <a class="delete" data-doc="<%= blade._id %>">Delete</a>
+    <a class="delete" data-doc="<%= blade._id %>">
+      <img src="/trash.svg" alt="delete icon">
+    </a>
   </div>
 
   <%- include('../partials/footer.ejs') %>

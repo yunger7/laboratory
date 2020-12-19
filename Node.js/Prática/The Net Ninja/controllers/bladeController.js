@@ -34,7 +34,7 @@ const blade_details = (req, res) => {
     res.render('blades/details', { title: 'Blade details', blade: result });
   })
   .catch(err => {
-    console.log(err);
+    res.status(404).render('404', { title: 'Blade not found' });
   });
 }
 
