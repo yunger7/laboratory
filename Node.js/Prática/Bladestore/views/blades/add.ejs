@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('../partials/head.ejs') %>
+	<body>
+		<%- include('../partials/header.ejs') %>
+
+		<div class="add-blade content">
+			<h2>Add a blade</h2>
+
+			<form action="/blades" method="POST">
+				<div class="mask">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" required />
+					<label for="driver">Driver</label>
+					<input type="text" name="driver" id="driver" required />
+					<select name="element" required>
+						<option disabled selected>Select the blade element</option>
+						<option value="Fire">Fire</option>
+						<option value="Ice">Ice</option>
+						<option value="Earth">Earth</option>
+						<option value="Light">Light</option>
+						<option value="Water">Water</option>
+						<option value="Wind">Wind</option>
+						<option value="Electric">Electric</option>
+						<option value="Dark">Dark</option>
+					</select>
+					<button>Submit</button>
+				</div>
+			</form>
+		</div>
+		<%- include('../partials/footer.ejs') %>
+	</body>
+</html>

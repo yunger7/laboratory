@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head.ejs') %>
+<body>
+  <%- include('../partials/header.ejs') %>
+
+  <div class="details content <%= blade.element.toLowerCase() %>">
+    <h2 class="name"><%= blade.name %></h2>
+    <p class="driver">Driver: <%= blade.driver %></p>
+    <p class="element">Element: <%= blade.element %></p>
+    <a class="delete" data-doc="<%= blade._id %>">
+      <img src="/trash.svg" alt="delete icon">
+    </a>
+  </div>
+
+  <%- include('../partials/footer.ejs') %>
+
+  <script>
+    const trash = document.querySelector('a.delete');
+
+    trash.addEventListener('click', e => {
+      const endpoint = `/blades/${trash.dataset.doc}`;
+
+      fetch(endpoint, {
+        method: 'DELETE'
+      })
+      .then(response => response.json())
+      .then(data => window.location.href = data.redirect)
+      .catch(err => console.log(err));
+    });
+  </script>
+</body>
+</html>
