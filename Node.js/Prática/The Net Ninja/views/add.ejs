@@ -7,22 +7,22 @@
 		<div class="add-blade content">
 			<h2>Add a blade</h2>
 
-			<form>
+			<form action="/blades" method="POST">
 				<div class="mask">
 					<label for="name">Name</label>
-					<input type="text" id="name" required />
+					<input type="text" name="name" id="name" required />
 					<label for="driver">Driver</label>
-					<input type="text" id="driver" required />
-					<select required>
+					<input type="text" name="driver" id="driver" required />
+					<select name="element" required>
 						<option disabled selected>Select the blade element</option>
-						<option value="fire">Fire</option>
-						<option value="ice">Ice</option>
-						<option value="earth">Earth</option>
-						<option value="light">Light</option>
-						<option value="water">Water</option>
-						<option value="wind">Wind</option>
-						<option value="electric">Electric</option>
-						<option value="dark">Dark</option>
+						<option value="Fire">Fire</option>
+						<option value="Ice">Ice</option>
+						<option value="Earth">Earth</option>
+						<option value="Light">Light</option>
+						<option value="Water">Water</option>
+						<option value="Wind">Wind</option>
+						<option value="Electric">Electric</option>
+						<option value="Dark">Dark</option>
 					</select>
 					<button>Submit</button>
 				</div>

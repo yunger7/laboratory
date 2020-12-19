@@ -7,11 +7,11 @@
 			<h2>List of all blades</h2>
 			<% if (blades.length > 0) { %>
 				<% blades.forEach(blade => { %> 
-					<div id="blade">
+					<a class="blade <%= blade.element.toLowerCase() %>" href="/blades/<%= blade._id %>">
 						<h3 class="name"><%= blade.name %></h3>
 						<p class="driver">Driver: <%= blade.driver %></p>
 						<p class="element">Element: <%= blade.element %></p>
-					</div>
+					</a>
 				<% }) %> 
 			<% } else { %>
 				<p>There are no blades to display ≧ ﹏ ≦</p>

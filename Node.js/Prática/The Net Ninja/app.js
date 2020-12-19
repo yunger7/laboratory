@@ -9,7 +9,7 @@ const app = express();
 
 // Connect to MongoDB
 mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-.then(result => {console.log('Connected'); app.listen(3000);})
+.then(result => {console.log('Connected to database'); app.listen(3000);})
 .catch(err => console.log(err));
 
 // Register view engine
@@ -18,6 +18,7 @@ app.set('view engine', 'ejs');
 
 // Middleware & Static files
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
 // Handle responses
@@ -44,8 +45,42 @@ app.get('/blades', (req, res) => {
   });
 });
 
+app.post('/blades', (req, res) => {
+  const blade = new Blade(req.body);
+
+  blade.save()
+  .then(result => {
+    res.redirect('/blades');
+  })
+  .catch(err => {
+    console.log(err);
+  })
+});
+
 app.get('/blades/add', (req, res) => {
   res.render('add', { title: 'Add a blade' });
+});
+
+app.get('/blades/:id', (req, res) => {
+  const id = req.params.id;
+
+  Blade.findById(id)
+  .then(result => {
+    res.render('details', { title: 'Blade details', blade: result });
+  })
+  .catch(err => {
+    console.log(err);
+  });
+});
+
+app.delete('/blades/:id', (req, res) => {
+  const id = req.params.id;
+
+  Blade.findByIdAndDelete(id)
+  .then(result => {
+    res.json({ redirect: '/blades' });
+  })
+  .catch(err => console.log(err));
 });
 
 // Redirects
