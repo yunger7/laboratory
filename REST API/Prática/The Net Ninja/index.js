@@ -8,6 +8,8 @@ const app = express();
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost/ninjago', { useNewUrlParser: true, useUnifiedTopology: true });
 
+app.use(express.static('public'));
+
 app.use(bodyParser.json());
 
 // Listen for requests
