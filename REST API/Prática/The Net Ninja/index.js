@@ -16,3 +16,9 @@ app.listen(process.env.PORT || 4000, () => {
 });
 
 app.use('/api', require('./routes/api'));
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  // console.log(err);
+  res.status(422).send({ error: err.message });
+});
