@@ -21,17 +21,17 @@ Existem 3 motivos por trás da criação desse repositório:
 ### :no_entry: **Disclaimer**
 Os items marcados como concluído são para significar que eu já me familiarizei e sei uma quantidade razoável do conteúdo. Mas, como toda tecnologia, você nunca **conclui** seus estudos. O aprendizado é uma constante evolução.
 
-- [x] [Lógica de programação](Lógica%20de%20Programação)
-- [x] [Git e GitHub](Git%20e%20GitHub)
-- [x] [JavaScript Básico](JavaScript)   
-- [x] [HTML5](HTML5%20e%20CSS3)
-- [x] [CSS3](HTML5%20e%20CSS3)
+- [x] Lógica de programação
+- [x] Git e GitHub
+- [x] JavaScript Básico 
+- [x] HTML5
+- [x] CSS3
 - [x] Wordpress
-- [x] [MySQL](PHP%20e%20MySQL)
-- [x] [PHP](PHP%20e%20MySQL)
+- [x] MySQL
+- [x] PHP
 - [x] Bootstrap
-- [x] [JavaScript Avançado](JavaScript)
-- [x] [APIs](JavaScript)
-- [x] [Vue.JS](Vue)
+- [x] JavaScript Avançado
+- [x] APIs
+- [x] Vue.JS
 - [x] Node.JS
 - [ ] React
