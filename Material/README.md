@@ -1,6 +1,6 @@
 # Material para estudo
 
-Aqui encontra-se todo material que encontrei/usei para estudar e gostaria de divulgar. Pull requests são bem-vindos.
+Aqui encontra-se fontes que encontrei/usei para estudar e gostaria de divulgar. Pull requests são bem-vindos.
 
 ## Lógica de Programação
 * [Curso Grátis de JavaScript e ECMAScript (Curso em Vídeo)](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1) :brazil:
