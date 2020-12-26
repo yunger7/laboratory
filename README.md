@@ -10,16 +10,18 @@ Ser um autodidata não significa aprender sem a ajuda de ninguem, significa aven
 ## :books: História desse repositório
 
 Existem 3 motivos por trás da criação desse repositório:
-* Registrar minha trajetória como autodidata: Experimentos, cursos e desafios
-* Organizar códigos 
+* Registrar minha trajetória como autodidata: experimentos, cursos e projetos simples
+* Organizar códigos e testes realizados
 * Compartilhar o material que me foi útil
+
+## :sparkles: Material para estudo
+[**Lista com fontes para estudo**](Material/README.md)
 
 ---
 
 ## :label: Assuntos com interesse:
 
-### :no_entry: **Disclaimer**
-Os items marcados como concluído são para significar que eu já me familiarizei e sei uma quantidade razoável do conteúdo. Mas, como toda tecnologia, você nunca **conclui** seus estudos. O aprendizado é uma constante evolução.
+:no_entry: Os items marcados como concluído são para significar que eu já me familiarizei e sei uma quantidade razoável do conteúdo. Mas, como toda tecnologia, você nunca **conclui** seus estudos. O aprendizado é uma constante evolução.
 
 - [x] Lógica de programação
 - [x] Git e GitHub
