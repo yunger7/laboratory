@@ -33,5 +33,5 @@ Os items marcados como concluído são para significar que eu já me familiarize
 - [x] [JavaScript Avançado](JavaScript)
 - [x] [APIs](JavaScript)
 - [x] [Vue.JS](Vue)
-- [ ] Node.JS
+- [x] Node.JS
 - [ ] React
