@@ -23,17 +23,21 @@ Existem 3 motivos por trás da criação desse repositório:
 
 :no_entry: Os items marcados como concluído são para significar que eu já me familiarizei e sei uma quantidade razoável do conteúdo. Mas, como toda tecnologia, você nunca **conclui** seus estudos. O aprendizado é uma constante evolução.
 
-- [x] Lógica de programação
-- [x] Git e GitHub
-- [x] JavaScript Básico 
-- [x] HTML5
-- [x] CSS3
-- [x] Wordpress
-- [x] MySQL
-- [x] PHP
-- [x] Bootstrap
-- [x] JavaScript Avançado
-- [x] APIs
-- [x] Vue.JS
-- [x] Node.JS
-- [ ] React
+<details>
+  <summary>Lista de assuntos</summary>
+  
+  - [x] Lógica de programação
+  - [x] Git e GitHub
+  - [x] JavaScript Básico 
+  - [x] HTML5
+  - [x] CSS3
+  - [x] Wordpress
+  - [x] MySQL
+  - [x] PHP
+  - [x] Bootstrap
+  - [x] JavaScript Avançado
+  - [x] APIs
+  - [x] Vue.JS
+  - [x] Node.JS
+  - [ ] React
+</details>
