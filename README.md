@@ -15,7 +15,7 @@ Existem 3 motivos por trás da criação desse repositório:
 * Compartilhar o material que me foi útil
 
 ## :sparkles: Material para estudo
-[**Lista com fontes para estudo**](Material/README.md)
+[**Lista completa com materiais para estudo**](Material/README.md)
 
 ---
 
