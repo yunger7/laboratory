@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  background-color: rgb(236, 230, 230);
+}
+
 h1 {
   text-align: center;
 }
@@ -34,6 +39,15 @@ a:hover {
 
 .active {
   border: dashed;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .content, footer {
