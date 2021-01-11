@@ -14,11 +14,11 @@ requestModal.addEventListener('click', (e) => {
 });
 
 // sayHello function call
-const button = document.querySelector('.call');
-button.addEventListener('click', () => {
-  // get function reference
-  const sayHello = firebase.functions().httpsCallable('sayHello');
-  sayHello({ name: 'Luis' }).then(result => {
-    console.log(result.data)
-  })
-});
+// const button = document.querySelector('.call');
+// button.addEventListener('click', () => {
+//   // get function reference
+//   const sayHello = firebase.functions().httpsCallable('sayHello');
+//   sayHello({ name: 'Luis' }).then(result => {
+//     console.log(result.data)
+//   })
+// });
