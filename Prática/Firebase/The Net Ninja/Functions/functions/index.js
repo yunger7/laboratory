@@ -66,7 +66,7 @@ exports.upvote = functions.https.onCall((data, context) => {
   }
 
   // get refs for user doc & request doc
-  const user = admin.firestore().collection("user").doc(context.auth.uid);
+  const user = admin.firestore().collection("users").doc(context.auth.uid);
   const request = admin.firestore().collection("requests").doc(data.id);
 
   return user.get().then((doc) => {
@@ -84,7 +84,7 @@ exports.upvote = functions.https.onCall((data, context) => {
     }).then(() => {
       // update votes on requests
       return request.update({
-        upvotes: admin.firestore().FieldValue.increment(1),
+        upvotes: admin.firestore.FieldValue.increment(1),
       });
     });
   });
