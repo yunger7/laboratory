@@ -1,4 +1,6 @@
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
   const title = "Welcome to the blog!";
@@ -6,15 +8,9 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{ title }</h1>
-
-        <p>{ 10 }</p>
-        <p>{ "Hello world!" }</p>
-        <p>{ [1, 2, 3, 4] }</p>
-        <p>{ Math.random() * 10 }</p>
-
-        <a href={ link }>Google website</a>
+        <Home />
       </div>
     </div>
   );
