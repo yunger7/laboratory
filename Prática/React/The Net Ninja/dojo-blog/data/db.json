@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My first post!",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel viverra eros. Vivamus commodo lacus velit, et lacinia ante scelerisque a. Sed quis turpis sodales nisl finibus gravida ut at tellus. Integer iaculis porttitor lectus, a dictum nisi placerat a. Praesent magna leo, porta et risus ac, congue placerat dolor. Suspendisse laoreet, dui sit amet placerat scelerisque, nisi tortor condimentum diam, vestibulum fringilla sem erat eget tortor. Morbi porta dignissim lorem et vulputate. Cras non felis sed tortor luctus iaculis. Vestibulum auctor hendrerit turpis vel tempus. Nunc eros ex, molestie id dui at, tempor euismod orci. Sed lobortis lacinia scelerisque. Ut pretium fermentum turpis nec placerat. Duis tristique sem a scelerisque rutrum",
+      "author": "Holo",
+      "id": 1
+    },
+    {
+      "title": "Camping guide",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel viverra eros. Vivamus commodo lacus velit, et lacinia ante scelerisque a. Sed quis turpis sodales nisl finibus gravida ut at tellus. Integer iaculis porttitor lectus, a dictum nisi placerat a. Praesent magna leo, porta et risus ac, congue placerat dolor. Suspendisse laoreet, dui sit amet placerat scelerisque, nisi tortor condimentum diam, vestibulum fringilla sem erat eget tortor. Morbi porta dignissim lorem et vulputate. Cras non felis sed tortor luctus iaculis. Vestibulum auctor hendrerit turpis vel tempus. Nunc eros ex, molestie id dui at, tempor euismod orci. Sed lobortis lacinia scelerisque. Ut pretium fermentum turpis nec placerat. Duis tristique sem a scelerisque rutrum",
+      "author": "Rin",
+      "id": 2
+    },
+    {
+      "title": "Creating an AI with python",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel viverra eros. Vivamus commodo lacus velit, et lacinia ante scelerisque a. Sed quis turpis sodales nisl finibus gravida ut at tellus. Integer iaculis porttitor lectus, a dictum nisi placerat a. Praesent magna leo, porta et risus ac, congue placerat dolor. Suspendisse laoreet, dui sit amet placerat scelerisque, nisi tortor condimentum diam, vestibulum fringilla sem erat eget tortor. Morbi porta dignissim lorem et vulputate. Cras non felis sed tortor luctus iaculis. Vestibulum auctor hendrerit turpis vel tempus. Nunc eros ex, molestie id dui at, tempor euismod orci. Sed lobortis lacinia scelerisque. Ut pretium fermentum turpis nec placerat. Duis tristique sem a scelerisque rutrum",
+      "author": "Ryuunosuke",
+      "id": 3
+    }
+  ]
+}
