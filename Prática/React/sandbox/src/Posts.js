@@ -4,6 +4,11 @@ import PostsList from './PostsList';
 const Posts = () => {
   const [posts, setPosts] = useState(null);
 
+  const handleDelete = (id) => {
+    const newPosts = posts.filter(post => post.id !== id);
+    setPosts(newPosts);
+  }
+
   const fetchPosts = async () => {
     try {
       const res = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -25,7 +30,7 @@ const Posts = () => {
   
   return (
     <div className="posts">
-      {posts && <PostsList posts={posts} />}
+      {posts && <PostsList posts={posts} handleDelete={handleDelete} />}
     </div>
   );
 }
