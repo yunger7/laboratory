@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.post {
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgba(211, 211, 211, 0.295);
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+}

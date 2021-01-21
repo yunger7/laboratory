@@ -3,7 +3,7 @@ const PostsList = ({ posts }) => {
     <div className="posts-list">
       {posts.map(post => (
         <div className="post" key={post.id}>
-          <h3>{ post.title }</h3>
+          <h3>{ post.title.toUpperCase() }</h3>
           <p>{ post.body }</p>
         </div>
       ))}
