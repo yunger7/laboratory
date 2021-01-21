@@ -20,3 +20,12 @@ code {
   border: 1px solid lightgrey;
   border-radius: 6px;
 }
+
+.loading, .error {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.error {
+  color: crimson;
+}
