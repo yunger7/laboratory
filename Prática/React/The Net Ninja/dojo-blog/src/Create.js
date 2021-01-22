@@ -4,12 +4,22 @@ const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('rin')
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title, body, author }
 
-    console.log(blog);
+    setIsLoading(true);
+
+    fetch('http://localhost:8000/blogs', {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog)
+    }).then(() => {
+      console.log('new blog added');
+      setIsLoading(false);
+    });
   }
 
   return (
@@ -34,10 +44,12 @@ const Create = () => {
           value={ author }
           onChange={e => setAuthor(e.target.value)}
         >
-          <option value="rin">Rin</option>
-          <option value="holo">Holo</option>
+          <option value="Rin">Rin</option>
+          <option value="Holo">Holo</option>
+          <option value="Ryuunosuke">Ryuunosuke</option>
         </select>
-        <button>Add blog</button>
+        { !isLoading && <button>Add blog</button>}
+        { isLoading && <button disabled>Adding blog...</button> }
       </form>
     </div>
   );
