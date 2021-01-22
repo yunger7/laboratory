@@ -9,7 +9,7 @@ const Home = () => {
       {error && <div>{ error }</div>}
       {isLoading && <div>Loading...</div>}
       {blogs && <BlogList blogs={blogs} title="All blogs" />}
-      {blogs && <BlogList blogs={blogs.filter((blog) => blog.author === "Rin")} title="Rin's Blogs" />}
+      {/* {blogs && <BlogList blogs={blogs.filter((blog) => blog.author === "Rin")} title="Rin's Blogs" />} */}
     </div>
   );
 }
