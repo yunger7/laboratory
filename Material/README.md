@@ -52,7 +52,7 @@ Aqui encontra-se fontes que encontrei/usei para estudar e gostaria de divulgar. 
 
 ## Vue.JS
 * [Vue JS 2 Tutorial (The Net Ninja)](https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) :earth_americas:
-* [Learn Vue.js - Full Course for Beginners - 2019 (Free Code Camp)](https://youtu.be/4deVCNJq3qc) :earth_americas:
+* [Learn Vue.js - Full Course for Beginners - 2019 (FreeCodeCamp)](https://youtu.be/4deVCNJq3qc) :earth_americas:
 * [Vue.JS Documentation](https://vuejs.org/v2/guide/) :earth_americas:
 
 ## Node.JS
@@ -65,3 +65,10 @@ Aqui encontra-se fontes que encontrei/usei para estudar e gostaria de divulgar. 
 * [Build A Restful Api With Node.js Express & MongoDB (Dev Ed)](https://youtu.be/vjf774RKrLc) :earth_americas:
 * [What is a RESTful API? | Creating a REST API with Node.js (Academind)](https://www.youtube.com/playlist?list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q) :earth_americas:
 * [REST Tutorial (Devmedia)](https://www.devmedia.com.br/rest-tutorial/28912) :brazil:
+
+## React
+* [Full Modern React Tutorial (The Net Ninja)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) :earth_americas:
+* [React JS Crash Course 2021 (Traversy Media)](https://youtu.be/w7ejDZ8SWv8) :earth_americas:
+* [Full React Course 2020 (FreeCodeCamp)](https://youtu.be/4UZrsTqkcW4) :earth_americas:
+* [React in 100 Seconds (Fireship)](https://youtu.be/Tn6-PIqc4UM) :earth_americas:
+* [React Documentation](https://reactjs.org/docs/getting-started.html)
