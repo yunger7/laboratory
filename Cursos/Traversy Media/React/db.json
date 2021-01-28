@@ -10,12 +10,12 @@
       "id": 3,
       "text": "Meditate",
       "day": "Jan 28 at 10:00 PM",
-      "reminder": true
+      "reminder": false
     },
     {
       "text": "Make dinner",
       "day": "Today",
-      "reminder": false,
+      "reminder": true,
       "id": 4
     }
   ]
