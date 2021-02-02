@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { Component, useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 // class BookList extends Component {
