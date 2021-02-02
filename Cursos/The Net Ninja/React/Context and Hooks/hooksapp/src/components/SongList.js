@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid'
 import NewSongForm from './NewSongForm';
 
@@ -12,6 +12,10 @@ const SongList = () => {
   const addSong = (title) => {
     setSongs([...songs, { id: uuidv4(), title }])
   }
+
+  useEffect(() => {
+    console.log('useEffect hook ran', songs);
+  }, [songs])
 
   return (
     <div className="song-list">
