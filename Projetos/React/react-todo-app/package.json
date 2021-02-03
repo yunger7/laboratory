@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
+    "firebase": "^8.2.5",
     "install": "^0.13.0",
     "npm": "^7.5.2",
     "react": "^17.0.1",
