@@ -1,10 +1,10 @@
-const TaskList = () => {
+const TaskList = ({ tasks }) => {
   return (
     <div className="task-list">
       <ul>
-        <li>Testing</li>
-        <li>Testing</li>
-        <li>Testing</li>
+        { tasks.docs.map(doc => (
+          <li key={doc.id}>{ doc.data().text }</li>
+        )) }
       </ul>
     </div>
   );
