@@ -32,6 +32,12 @@ li {
   border-radius: 8px;
 }
 
+li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+  background-color: #3B4252;
+}
+
 a {
   text-decoration: none;
   color: #5E81AC;

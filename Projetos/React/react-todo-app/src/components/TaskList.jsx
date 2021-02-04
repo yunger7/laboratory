@@ -1,9 +1,11 @@
+import Task from "./Task";
+
 const TaskList = ({ tasks }) => {
   return (
     <div className="task-list">
       <ul>
         { tasks.docs.map(doc => (
-          <li key={doc.id}>{ doc.data().text }</li>
+          <Task key={doc.id} task={{...doc.data(), id: doc.id}} />
         )) }
       </ul>
     </div>
