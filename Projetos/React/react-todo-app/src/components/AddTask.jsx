@@ -20,7 +20,7 @@ const AddTask = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" value={task} onChange={e => setTask(e.target.value)} placeholder="Task name" disabled={loading} required />
-      <input type="submit" value="Save" disabled={loading} />
+      <input type="submit" value="🎯" disabled={loading} />
     </form>
   );
 }

@@ -1,6 +1,6 @@
-const Task = ({ task }) => {
+const Task = ({ task, deleteTask }) => {
   return (
-    <li data-id={task.id}>{ task.text }</li>
+    <li onClick={() => deleteTask(task.id)}>{ task.text }</li>
   );
 }
  

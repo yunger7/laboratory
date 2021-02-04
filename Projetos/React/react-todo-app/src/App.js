@@ -9,6 +9,10 @@ import TaskList from './components/TaskList';
 function App() {
   const [tasks, loading, error] = useCollection(Firestore.collection('tasks'));
 
+  const deleteTask = (id) => {
+    Firestore.collection('tasks').doc(id).delete();
+  }
+
   return (
     <Router>
       <div className="App">
@@ -17,7 +21,7 @@ function App() {
             <Route exact path="/">
               { loading && <span>Loading...</span> }
               { error && <span>{ error }</span> }
-              { tasks && <TaskList tasks={tasks} /> }
+              { tasks && <TaskList tasks={tasks} deleteTask={deleteTask} /> }
             </Route>
             <Route path="/add">
               <AddTask />

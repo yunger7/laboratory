@@ -7,7 +7,7 @@ const Header = ({ tasks }) => {
   return (
     <header>
       <h1><FaCheck /> Todo App</h1>
-      { location.pathname === "/" && <p>You have { tasks ? `${tasks.docs.length} ${tasks.docs.length === 1 ? 'task' : 'tasks'}` : '0 tasks' } to do...</p> }
+      { location.pathname === "/" && tasks && <p>You have {tasks.docs.length ? `${tasks.docs.length} ${tasks.docs.length > 1 ? 'tasks' : 'task'} to do...` : 'no tasks to do... Yay!'}</p> }
       <Link to={ location.pathname === "/" ? "/add" : "/" }>{ location.pathname === "/" ? 'Add task' : 'Go back'}</Link>
     </header>
   );
