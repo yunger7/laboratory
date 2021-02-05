@@ -11,12 +11,15 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { green, orange } from '@material-ui/core/colors';
 
+import 'fontsource-roboto';
+import Typography from '@material-ui/core/Typography';
+
 const useStyles = makeStyles({
   root: {
     border: 0,
     borderRadius: 15,
     color: 'white',
-    padding: '0 30px',
+    padding: '10px 30px',
     background: 'linear-gradient(45deg, #FE6B8B, #FF8E53)'
   }
 });
@@ -33,6 +36,12 @@ const theme = createMuiTheme({
     },
     secondary: {
       main: green[500],
+    }
+  },
+  typography: {
+    h2: {
+      fontSize: 36,
+      marginBottom: 10
     }
   }
 })
@@ -61,6 +70,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <header className="App-header">
+          <Typography
+            component="h1"
+            variant="h2"
+          >Testing MUI</Typography>
           <ButtonStyled />
           <TextField
             label="Email"
