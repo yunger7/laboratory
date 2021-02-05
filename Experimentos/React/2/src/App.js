@@ -8,7 +8,8 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
 
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { green, orange } from '@material-ui/core/colors';
 
 const useStyles = makeStyles({
   root: {
@@ -24,6 +25,17 @@ const ButtonStyled = () => {
   const classes = useStyles();
   return <Button className={classes.root}>Test styled button</Button>
 }
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: orange[500],
+    },
+    secondary: {
+      main: green[500],
+    }
+  }
+})
 
 const CheckboxExample = () => {
   const [checked, setChecked] = useState(true);
@@ -46,31 +58,33 @@ const CheckboxExample = () => {
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ButtonStyled />
-        <TextField
-          label="Email"
-          placeholder="example@test.com"
-        />
-        <CheckboxExample />
-        <ButtonGroup>
-          <Button
-            startIcon={<Public />}
-            size="large"
-            variant="contained"
-            color="primary"
-          >Hello World</Button>
-          <Button
-            endIcon={<Public />}
-            size="large"
-            variant="text"
-            color="secondary"
-          >Bye World</Button>
-        </ButtonGroup>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <header className="App-header">
+          <ButtonStyled />
+          <TextField
+            label="Email"
+            placeholder="example@test.com"
+          />
+          <CheckboxExample />
+          <ButtonGroup>
+            <Button
+              startIcon={<Public />}
+              size="large"
+              variant="contained"
+              color="primary"
+            >Hello World</Button>
+            <Button
+              endIcon={<Public />}
+              size="large"
+              variant="text"
+              color="secondary"
+            >Bye World</Button>
+          </ButtonGroup>
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+      </div>
+    </ThemeProvider>
   );
 }
 
