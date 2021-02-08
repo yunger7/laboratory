@@ -1,19 +1,18 @@
 import Login from './Login';
 import SignUp from './SignUp';
-import { auth } from './firebaseConfig';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import Home from './Home';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { AuthContext } from './AuthContext';
 
 function App() {
-  const [user, loading, error] = useAuthState(auth);
   const [opType, setOpType] = useState('login');
+  const { user, authLoading, authError } = useContext(AuthContext);
 
-  useEffect(() => {
-    console.log(user);
-  }, [user])
+  // useEffect(() => {
+  //   console.log(user);
+  // }, [user])
 
-  if (loading) {
+  if (authLoading) {
     return (
       <div className="App">
         <h3>Loading...</h3>
@@ -21,17 +20,17 @@ function App() {
     )
   }
 
-  if (error) {
+  if (authError) {
     return (
       <div className="App">
-        <h3>{ error }</h3>
+        <h3>{ authError }</h3>
       </div>
     )
   }
 
   if (user) {
     return (
-      <Home />
+      <Home user={user} />
     )
   }
 
