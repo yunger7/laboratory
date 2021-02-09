@@ -1,19 +1,14 @@
 import { useContext } from 'react';
 import { AuthContext } from './AuthContext';
-import { auth } from './firebaseConfig';
 
 const Home = () => {
-  const { user } = useContext(AuthContext);
-
-  const signOut = () => {
-    auth.signOut()
-  }
+  const { user, logout } = useContext(AuthContext);
 
   return (
     <div>
       <h1>Welcome 👋</h1>
       <p>Logged in as { user.email }</p>
-      <button onClick={signOut}>Sign out</button>
+      <button onClick={logout}>Sign out</button>
     </div>
   );
 }

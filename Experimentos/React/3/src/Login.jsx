@@ -1,26 +1,30 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { auth } from './firebaseConfig';
+import { AuthContext } from './AuthContext';
 
 const Login = ({ setOpType }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
+  const { login } = useContext(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    auth.signInWithEmailAndPassword(email, password).then(() => {
-      setError(null);
-    })
-    .catch(err => {
-      setError(err.message);
-    });
+    login(email, password)
+
+    // auth.signInWithEmailAndPassword(email, password).then(() => {
+    //   setError(null);
+    // })
+    // .catch(err => {
+    //   setError(err.message);
+    // });
   }
 
   return (
     <>
       <h1>Welcome!</h1>
       <p>Please login to continue...</p>
-      { error && <div className="error">{ error }</div> }
+      {/* { error && <div className="error">{ error }</div> } */}
       <form onSubmit={e => handleSubmit(e)}>
         <input type="email" placeholder="Email" required onChange={e => setEmail(e.target.value)} />
         <br/>
