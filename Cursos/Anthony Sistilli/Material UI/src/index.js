@@ -4,25 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+// import { ThemeProvider } from '@material-ui/core';
 // import theme from './theme';
-import { orange, green } from '@material-ui/core/colors';
-
-const theme = createMuiTheme({
-  palette: {
-    primary: orange,
-    secondary: {
-      main: "#00FF00"
-    },
-  }
-});
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
