@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import mockData from "./mockData";
+import { toFirstCharUppercase } from "./constants";
 
 const useStyles = makeStyles({
 	pokedexContainer: {
@@ -24,17 +25,13 @@ const useStyles = makeStyles({
   }
 });
 
-const toFirstCharUppercase = name => {
-  return name.charAt(0).toUpperCase() + name.slice(1);
-}
-
 const Pokedex = ({ history }) => {
 	const classes = useStyles();
 	const [pokemonData, setPokemonData] = useState(mockData);
 
 	const getPokemonCard = (pokemonId) => {
 		// console.log(pokemonData[`${pokemonId}`]);
-    
+
 		const { id, name } = pokemonData[`${pokemonId}`];
 		const sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
