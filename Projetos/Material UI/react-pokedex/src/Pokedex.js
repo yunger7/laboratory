@@ -28,18 +28,19 @@ const toFirstCharUppercase = name => {
   return name.charAt(0).toUpperCase() + name.slice(1);
 }
 
-const Pokedex = (props) => {
+const Pokedex = ({ history }) => {
 	const classes = useStyles();
 	const [pokemonData, setPokemonData] = useState(mockData);
 
 	const getPokemonCard = (pokemonId) => {
-		console.log(pokemonData[`${pokemonId}`]);
+		// console.log(pokemonData[`${pokemonId}`]);
+    
 		const { id, name } = pokemonData[`${pokemonId}`];
 		const sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
 		return (
 			<Grid item key={pokemonId} xs={12} sm={4}>
-				<Card>
+				<Card onClick={() => history.push(`/${pokemonId}`)}>
 					<CardMedia
 						className={classes.cardMedia}
 						image={sprite}
