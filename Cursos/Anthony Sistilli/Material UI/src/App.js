@@ -1,8 +1,8 @@
-import BasicTable from "./Table";
+import Home from "./Home";
 
 function App() {
 	return (
-    <BasicTable />
+    <Home />
 	);
 }
 
