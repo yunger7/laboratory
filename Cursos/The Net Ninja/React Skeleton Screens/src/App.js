@@ -6,11 +6,11 @@ function App() {
     <div className="App">
       <header>
         <h1>React Skeletons</h1>
-        <div className="content">
-          <Articles />
-          <User />
-        </div>
       </header>
+      <div className="content">
+        <Articles />
+        <User />
+      </div>
     </div>
   );
 }
