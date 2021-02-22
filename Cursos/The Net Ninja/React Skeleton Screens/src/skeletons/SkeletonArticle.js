@@ -1,4 +1,5 @@
 import SkeletonElement from "./SkeletonElement"
+import Shimmer from "./Shimmer";
 
 const SkeletonArticle = ({ theme }) => {
   const themeClass = theme || "light";
@@ -11,6 +12,7 @@ const SkeletonArticle = ({ theme }) => {
         <SkeletonElement type="text" />
         <SkeletonElement type="text" />
       </div>
+      <Shimmer />
     </div>
   );
 }
