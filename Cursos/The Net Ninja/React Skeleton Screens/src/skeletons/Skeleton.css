@@ -30,6 +30,7 @@
 .skeleton-wrapper {
   margin: 20px auto;
   padding: 10px 15px;
+  border-radius: 4px;
 }
 
 /* Skeleton profile */
@@ -38,4 +39,17 @@
   grid-template-columns: 1fr 2fr;
   gap: 30px;
   align-items: center;
+}
+
+/* Themes */
+.skeleton-wrapper.light {
+  background-color: #f2f2f2;
+}
+
+.skeleton-wrapper.dark {
+  background-color: #444;
+}
+
+.skeleton-wrapper.dark .skeleton {
+  background-color: #777;
 }
