@@ -15,23 +15,24 @@ const useStyles = makeStyles({
 	},
 });
 
-const CryptoCard = () => {
+const CryptoCard = ({ coin }) => {
 	const classes = useStyles();
+  const { name, symbol, price_usd: price, percent_change_7d, percent_change_24h, percent_change_1h } = coin;
 
 	return (
 		<Card>
       <CardActionArea>
         <CardMedia
           className={classes.cardMedia}
-          image="/ethereum.png"
-          title="Ethereum"
+          image={`/images/${name}.jpeg`}
+          title={name}
         />
         <CardContent>
-          <Typography variant="h6">Crypto name</Typography>
-          <Typography>$99999.99</Typography>
-          <Typography>-1,25% (24h)</Typography>
-          <Typography>-1,25% (7h)</Typography>
-          <Typography>-1,25% (1h)</Typography>
+          <Typography variant="h6">{`${name} (${symbol})`}</Typography>
+          <Typography>${price}</Typography>
+          <Typography>{ percent_change_7d }% (7d)</Typography>
+          <Typography>{ percent_change_24h }% (24h)</Typography>
+          <Typography>{percent_change_1h}% (1h)</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>

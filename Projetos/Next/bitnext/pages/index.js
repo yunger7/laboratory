@@ -34,8 +34,8 @@ export default function Home({ coins }) {
 				</Typography>
 			</div>
 			<Grid container spacing={3} component="main" className={classes.main}>
-        {coins.forEach(coin => (
-          <Grid item xs={4}>
+        {coins.map(coin => (
+          <Grid item xs={12} sm={6} md={4} key={coin.id}>
             <CryptoCard coin={coin} />
           </Grid>
         ))}
