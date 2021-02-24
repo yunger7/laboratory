@@ -18,7 +18,6 @@ const useStyles = makeStyles({
 
 export default function Home({ coins }) {
 	const classes = useStyles();
-  console.log(coins);
 
 	return (
 		<div>
@@ -29,7 +28,7 @@ export default function Home({ coins }) {
 				<Typography variant="h4" className={classes.title}>
 					Welcome do BitNext!
 				</Typography>
-				<Typography className={classes.subTitle}>
+				<Typography variant="subtitle1" className={classes.subTitle}>
 					Check your crypto prices
 				</Typography>
 			</div>
