@@ -4,9 +4,7 @@ import { MonetizationOn } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   logo: {
-    minWidth: '115px',
-    display: 'flex',
-    justifyContent: 'space-between',
+    marginRight: 6,
   }
 });
 
@@ -16,12 +14,10 @@ const Navbar = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <div className={classes.logo}>
-          <MonetizationOn fontSize="large" />
-          <Typography component="h1" variant="h6">
-            BitNext
-          </Typography>
-        </div>
+        <MonetizationOn fontSize="large" className={classes.logo} />
+        <Typography component="h1" variant="h6">
+          BitNext
+        </Typography>
       </Toolbar>
     </AppBar>
   );

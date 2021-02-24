@@ -1,11 +1,14 @@
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
+import { Container } from "@material-ui/core";
 
 const Layout = ({ children }) => {
   return (
-    <div className="content">
+    <>
       <Navbar />
-      { children }
-    </div>
+      <Container className="content" maxWidth="lg">
+        { children }
+      </Container>
+    </>
   )
 }
 
