@@ -20,12 +20,16 @@ const Navbar = () => {
 	return (
 		<AppBar position="static" className={classes.root}>
 			<Toolbar>
-				<div className={classes.logo}>
-					<MonetizationOn fontSize="large" className={classes.logoIcon} />
-					<Typography component="h1" variant="h6">
-						BitNext
-					</Typography>
-				</div>
+				<Link href="/">
+					<a className={classes.logo}>
+						<div className={classes.logo}>
+							<MonetizationOn fontSize="large" className={classes.logoIcon} />
+							<Typography component="h1" variant="h6">
+								BitNext
+							</Typography>
+						</div>
+					</a>
+				</Link>
         <Link href="/about">
 				  <Button color="inherit">About</Button>
         </Link>
