@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import { Container } from "@material-ui/core";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
