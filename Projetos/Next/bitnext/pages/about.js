@@ -31,7 +31,6 @@ const useStyles = makeStyles({
 
 const About = () => {
 	const classes = useStyles();
-	const [tooltip, setTooltip] = useState(false);
 
 	return (
 		<div className={classes.root}>
@@ -40,21 +39,14 @@ const About = () => {
 			</Typography>
 			<Tooltip
 				title="Tip: Try moving this element!"
-				placement="top"
+				placement="bottom"
+				whileTap={{ scale: 0.9 }}
 				arrow
-				open={tooltip}
-				leaveDelay={0}
 			>
 				<Paper
 					className={classes.paper}
 					elevation={3}
 					component={motion.div}
-					drag
-					dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-					dragElastic={0.1}
-					onMouseOver={() => setTooltip(true)}
-					onMouseOut={() => setTooltip(false)}
-					onDrag={() => setTooltip(false)}
 				>
 					<Typography variant="body1" className={classes.text}>
 						This project was made with the intention of testing some

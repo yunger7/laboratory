@@ -36,7 +36,7 @@ const CryptoCard = ({ coin }) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button target="_blank" href={`https://www.google.com/search?q=${name}`} size="small" color="primary">Learn More</Button>
+        <Button target="_blank" href={`https://www.google.com/search?q=${name}+crypto+coin`} size="small" color="primary">Learn More</Button>
       </CardActions>
 		</Card>
 	);

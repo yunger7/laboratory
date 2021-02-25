@@ -1,7 +1,9 @@
 import Head from "next/head";
+import CryptoCard from "../components/CryptoCard";
+
+import { motion } from "framer-motion";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid } from "@material-ui/core";
-import CryptoCard from "../components/CryptoCard";
 
 const useStyles = makeStyles({
 	title: {
