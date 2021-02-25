@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
+import { grey } from "@material-ui/core/colors";
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 import { MonetizationOn } from "@material-ui/icons";
 
@@ -18,7 +19,7 @@ const Navbar = () => {
 	const classes = useStyles();
 
 	return (
-		<AppBar position="static" className={classes.root}>
+		<AppBar position="static" className={classes.root} color="inherit">
 			<Toolbar>
 				<Link href="/">
 					<a className={classes.logo}>
