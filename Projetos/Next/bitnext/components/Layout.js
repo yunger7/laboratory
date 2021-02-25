@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import { Container } from "@material-ui/core";
+import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
       <Container className="content" maxWidth="lg">
         { children }
       </Container>
+      <Footer />
     </>
   )
 }

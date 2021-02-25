@@ -38,7 +38,7 @@ const About = () => {
 				What is this all about?
 			</Typography>
 			<Tooltip
-				title="Tip: Try moving this element!"
+				title="Tip: Try tapping this element!"
 				placement="bottom"
 				whileTap={{ scale: 0.9 }}
 				arrow
