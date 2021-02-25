@@ -5,6 +5,17 @@ import { motion } from "framer-motion";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid } from "@material-ui/core";
 
+const cardVariants = {
+	initial: {
+		opacity: 0,
+		y: 150,
+	},
+	animate: {
+		opacity: 1,
+		y: 0,
+	},
+};
+
 const useStyles = makeStyles({
 	title: {
 		textAlign: "center",
@@ -35,8 +46,19 @@ export default function Home({ coins, totalCoins }) {
 				</Typography>
 			</div>
 			<Grid container spacing={3} component="main" className={classes.main}>
-				{coins.map(coin => (
-					<Grid item xs={12} sm={6} md={4} key={coin.id}>
+				{coins.map((coin, index) => (
+					<Grid
+						item
+						xs={12}
+						sm={6}
+						md={4}
+						key={coin.id}
+						component={motion.div}
+						variants={cardVariants}
+						initial="initial"
+						animate="animate"
+						transition={{ delay: parseFloat(`0.${index}`) }}
+					>
 						<CryptoCard coin={coin} />
 					</Grid>
 				))}
@@ -64,5 +86,6 @@ export const getStaticProps = async () => {
 			coins: coinsData,
 			totalCoins,
 		},
+		revalidate: 30,
 	};
 };
