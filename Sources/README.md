@@ -1,8 +1,8 @@
-# Material para estudo
+# Source list
 
-Aqui encontra-se fontes que encontrei/usei para estudar e gostaria de divulgar. Pull requests são bem-vindos.
+This is a collection of learning sources I found along the way
 
-## Lógica de Programação
+## Logic
 * [Curso Grátis de JavaScript e ECMAScript (Curso em Vídeo)](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)
 * [Curso de Algoritmos (Curso em Vídeo)](https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV)
 * [URI Judge](www.urionlinejudge.com)
@@ -10,7 +10,7 @@ Aqui encontra-se fontes que encontrei/usei para estudar e gostaria de divulgar. 
 ## Git & GitHub
 * [Git Documentation](https://git-scm.com/docs)
 * [GitHub Documentation](https://docs.github.com)
-* [Git & GitHub for Beginners(The Net Ninja)](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+* [Git & GitHub for Beginners (The Net Ninja)](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
 * [Curso de Git e GitHub (Gustavo Guanabara)](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
 * [Como usar Git e Github na prática: Guia para iniciantes (Mayk Brito da Rocketseat)](https://youtu.be/2alg7MQ6_sI)
 * [Git & GitHub Crash Course For Beginners (Traversy Media)](https://youtu.be/SWYqp7iY_Tc)
