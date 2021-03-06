@@ -1,6 +1,6 @@
 # REST APIs
 
-[Source list](../../Material/README.md)
+[Source list](../../Sources/README.md)
 
 ## Covered topics
 - [x] Basics

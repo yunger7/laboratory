@@ -1,6 +1,6 @@
 # Vue.js
 
-[Source list](../../Material/README.md)
+[Source list](../../Sources/README.md)
 
 ## Covered topics (Vue 2)
 - [x] Basics
