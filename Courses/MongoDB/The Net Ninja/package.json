@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "yunger",
   "license": "ISC",
   "dependencies": {
+    "mocha": "^8.3.1",
     "mongoose": "^5.11.19"
   }
 }

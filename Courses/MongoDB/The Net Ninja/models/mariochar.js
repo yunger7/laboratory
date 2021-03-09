@@ -9,4 +9,4 @@ const MarioCharSchema = new Schema({
 });
 
 const MarioChar = Mongoose.model('mariochar', MarioCharSchema);
-export default MarioChar;
+export default MarioChar
