@@ -16,3 +16,11 @@ before((done) => {
 			console.log("> Connection error:", error);
 		});
 });
+
+// Drop the characters collection before each test
+beforeEach((done) => {
+	// Drop the collection
+	Mongoose.connection.collections.mariochars.drop(() => {
+		done();
+	})
+});
