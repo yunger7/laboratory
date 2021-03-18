@@ -1,9 +1,9 @@
 const assert = require("assert");
 const MarioChar = require("../models/mariochar");
 
-describe("Saving Records", (done) => {
+describe("Saving Records", function(){
 
-  it('Saves a record to the database', () => {
+  it('Saves a record to the database', function(done) {
     const char = new MarioChar({
       name: 'Mario',
     });
