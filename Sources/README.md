@@ -106,3 +106,8 @@ This is a collection of learning sources I found along the way
 * [Next.js Tutorial for Beginners (The Net Ninja)](https://www.youtube.com/watch?v=A63UxsQsEbU&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
 * [Next.js Crash Course (Traversy Media)](https://www.youtube.com/watch?v=mTz0GXj8NN0)
 * [Next.js in 100 seconds (Fireship)](https://youtu.be/Sklc_fQBmcs)
+
+## MongoDB
+* [MongoDB Documentation](https://docs.mongodb.com/)
+* [MongoDB Tutorial for Beginners (The Net Ninja)](https://www.youtube.com/watch?v=9OPP_1eAENg&list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u)
+* [MongoDB Crash Course (Traversy Media)](https://youtu.be/-56x56UppqQ)
