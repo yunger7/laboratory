@@ -1,0 +1,15 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "yunger",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.3.1",
+    "mongoose": "^5.11.19"
+  }
+}
