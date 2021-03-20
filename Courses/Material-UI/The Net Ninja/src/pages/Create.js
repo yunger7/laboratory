@@ -6,17 +6,7 @@ import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
-	button: {
-		fontSize: 60,
-		backgroundColor: "violet",
-		"&:hover": {
-			backgroundColor: "blue",
-		},
-	},
-	title: {
-		textDecoration: "underline",
-		marginBottom: 20,
-	},
+	
 });
 
 export default function Create() {
@@ -29,7 +19,6 @@ export default function Create() {
 				color="textSecondary"
 				component="h2"
 				gutterBottom
-        className={classes.title}
 			>
 				Create a New Note
 			</Typography>
@@ -37,9 +26,8 @@ export default function Create() {
 			<Button
 				type="submit"
 				variant="contained"
-				color="secondary"
+				color="primary"
 				endIcon={<KeyboardArrowRightIcon />}
-				className={classes.button}
 				onClick={() => console.log("You clicked me!")}
 			>
 				Submit
