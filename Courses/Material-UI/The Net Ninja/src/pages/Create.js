@@ -1,16 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 import { makeStyles } from "@material-ui/core";
+import TextField from "@material-ui/core/TextField";
 
 const useStyles = makeStyles({
-	
+	field: {
+		marginTop: 20,
+		marginBottom: 20,
+		display: "block",
+	},
 });
 
 export default function Create() {
 	const classes = useStyles();
+	const [title, setTitle] = useState("");
+  const [titleError, setTitleError] = useState(false);
+	const [details, setDetails] = useState("");
+	const [detailsError, setDetailsError] = useState(false);
+
+	const handleSubmit = e => {
+		e.preventDefault();
+    setTitleError(false)
+    setDetailsError(false);
+
+    if (title == "") {
+      setTitleError(true);
+    }
+
+    if (details == "") {
+      setDetailsError(true);
+    }
+
+		if (title && details) {
+			console.log(title, details);
+		}
+	};
 
 	return (
 		<Container>
@@ -23,15 +50,40 @@ export default function Create() {
 				Create a New Note
 			</Typography>
 
-			<Button
-				type="submit"
-				variant="contained"
-				color="primary"
-				endIcon={<KeyboardArrowRightIcon />}
-				onClick={() => console.log("You clicked me!")}
-			>
-				Submit
-			</Button>
+			<form noValidate autoComplete="off" onSubmit={handleSubmit}>
+				<TextField
+					className={classes.field}
+					onChange={e => setTitle(e.target.value)}
+          error={titleError}
+					label="Note title"
+					variant="outlined"
+					color="secondary"
+					fullWidth
+					required
+				/>
+				<TextField
+					className={classes.field}
+					onChange={e => setDetails(e.target.value)}
+          error={detailsError}
+					label="Details"
+					variant="outlined"
+					color="secondary"
+					fullWidth
+					multiline
+					rows={4}
+					required
+				/>
+        <Button
+          type="submit"
+          variant="contained"
+          color="secondary"
+          endIcon={<KeyboardArrowRightIcon />}
+          onClick={() => console.log("You clicked me!")}
+        >
+          Submit
+        </Button>
+			</form>
+
 		</Container>
 	);
 }
