@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
+import Container from "@material-ui/core/Container";
 
 export default function Notes() {
 	const [notes, setNotes] = useState([]);
@@ -12,7 +13,7 @@ export default function Notes() {
 	}, []);
 
 	return (
-		<div>
+		<Container>
       {/* <Grid container>
         <Grid item md={3} sm={6} xs={12}>
           <Paper>1</Paper>
@@ -35,6 +36,6 @@ export default function Notes() {
           </Grid>
         ))}
       </Grid>
-		</div>
+		</Container>
 	);
 }
