@@ -10,6 +10,7 @@ import {
 	ListItemText,
 	AppBar,
 	Toolbar,
+	Avatar,
 } from "@material-ui/core";
 import { SubjectOutlined, AddCircleOutlined } from "@material-ui/icons";
 
@@ -44,6 +45,9 @@ const useStyles = makeStyles(theme => {
 		date: {
 			flexGrow: 1,
 		},
+		avatar: {
+			marginLeft: theme.spacing(2),
+		},
 	};
 });
 
@@ -74,6 +78,7 @@ export default function Layout({ children }) {
 						Today is the {format(new Date(), "do MMMM Y")}
 					</Typography>
 					<Typography>Mario</Typography>
+					<Avatar src="/mario-av.png" className={classes.avatar} />
 				</Toolbar>
 			</AppBar>
 
