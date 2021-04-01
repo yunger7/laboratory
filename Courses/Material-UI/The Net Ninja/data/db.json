@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "title": "Yoshi's birthday bash",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non posuere purus, sit amet ultrices dolor. Phasellus imperdiet leo sed urna dictum, eget ultricies erat laoreet. In quis libero est.",
+      "category": "reminders",
+      "id": 1
+    },
+    {
+      "title": "Complete my ninja training",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non posuere purus, sit amet ultrices dolor. Phasellus imperdiet leo sed urna dictum, eget ultricies erat laoreet. In quis libero est.",
+      "category": "work",
+      "id": 2
+    },
+    {
+      "title": "Order a pizza!",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non posuere purus, sit amet ultrices dolor. Phasellus imperdiet leo sed urna dictum, eget ultricies erat laoreet. In quis libero est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non posuere purus, sit amet ultrices dolor. Phasellus imperdiet leo sed urna dictum, eget ultricies erat laoreet. In quis libero est.",
+      "category": "todos",
+      "id": 3
+    },
+    {
+      "title": "Go to the bank",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non posuere purus, sit amet ultrices dolor. Phasellus imperdiet leo sed urna dictum, eget ultricies erat laoreet. In quis libero est.",
+      "category": "money",
+      "id": 4
+    },
+    {
+      "title": "Walk to the park",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci nisl, euismod in fringilla vel, lobortis ut dui. Nam nec interdum justo. Praesent malesuada ligula ipsum, nec vestibulum mauris semper eu. Morbi augue risus, iaculis ac ornare vitae, auctor nec lorem. Sed felis sapien, posuere eget efficitur ac, pulvinar ac justo. Praesent convallis diam felis, et ultricies massa tempus sit amet. Mauris diam massa, pretium ac magna ac, dignissim volutpat justo. Nam vulputate interdum fringilla.",
+      "category": "todos",
+      "id": 5
+    }
+  ]
+}
