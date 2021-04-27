@@ -1,16 +1,29 @@
-let character = "Mario";
-let age = 30;
-let isBlackBelt = true;
+// Arrays
+let names = ["Holo", "Shiina", "Nino"];
 
-// character = 20;
-character = "Luigi";
-// age = 'hello';
-age = 20;
-// isBlackBelt = 'hello';
-isBlackBelt = false;
+names.push("Rin");
+// names.push(3);
+// names[0] = 4;
 
-const circumference = (diameter: number) => {
-	return diameter * Math.PI;
-}
+let mixed = ["Nino", 18, "Shiina", 17];
 
-console.log(circumference(7.5));
+mixed.push("Rin");
+mixed.push(16);
+mixed[0] = 3;
+
+// Objects
+let character = {
+	name: "Rin",
+	age: 16,
+	hobby: "Camping",	
+};
+
+character.name = "Holo";
+character.age = 600;
+// character.age = '40';
+// character = [];
+character = {
+  name: "Holo",
+  age: 600,
+  hobby: "Traveling",
+};

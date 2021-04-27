@@ -1,13 +1,24 @@
-var character = "Mario";
-var age = 30;
-var isBlackBelt = true;
-// character = 20;
-character = "Luigi";
-// age = 'hello';
-age = 20;
-// isBlackBelt = 'hello';
-isBlackBelt = false;
-var circumference = function (diameter) {
-    return diameter * Math.PI;
+// Arrays
+var names = ["Holo", "Shiina", "Nino"];
+names.push("Rin");
+// names.push(3);
+// names[0] = 4;
+var mixed = ["Nino", 18, "Shiina", 17];
+mixed.push("Rin");
+mixed.push(16);
+mixed[0] = 3;
+// Objects
+var character = {
+    name: "Rin",
+    age: 16,
+    hobby: "Camping"
 };
-console.log(circumference(7.5));
+character.name = "Holo";
+character.age = 600;
+// character.age = '40';
+// character = [];
+character = {
+    name: "Holo",
+    age: 600,
+    hobby: "Traveling"
+};
