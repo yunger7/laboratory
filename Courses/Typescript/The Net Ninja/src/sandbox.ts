@@ -1,8 +1,10 @@
-let greet: Function;
+type Uid = string | number;
+type User = { name: string, uid: Uid }
 
-const add = (a: number, b: number, c: number | string = 10) => {
-  console.log(a + b);
-  console.log(c);
+const greet = (user: User) => {
+	console.log(`${user.name} says hello`);
 }
 
-add(10, 5);
+const logItem = (uid: Uid, item: string) => {
+	console.log(`${item} has an uid of ${uid}`);
+}

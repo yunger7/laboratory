@@ -1,8 +1,7 @@
 "use strict";
-var greet;
-var add = function (a, b, c) {
-    if (c === void 0) { c = 10; }
-    console.log(a + b);
-    console.log(c);
+var greet = function (user) {
+    console.log(user.name + " says hello");
 };
-add(10, 5);
+var logItem = function (uid, item) {
+    console.log(item + " has an uid of " + uid);
+};
