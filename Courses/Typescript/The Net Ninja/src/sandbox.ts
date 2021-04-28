@@ -1,10 +1,24 @@
-type Uid = string | number;
-type User = { name: string, uid: Uid }
+// Example 1
+let greet: (a: string, b: string) => void;
 
-const greet = (user: User) => {
-	console.log(`${user.name} says hello`);
+greet = (name: string, greeting: string) => {
+	console.log(`${name} says ${greeting}`);
 }
 
-const logItem = (uid: Uid, item: string) => {
-	console.log(`${item} has an uid of ${uid}`);
+// Example 2
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+	if (action === "add") {
+		return numOne + numTwo;
+	} else {
+		return numOne - numTwo;
+	}
+}
+
+// Example 3
+let logDetails: (obj: { name: string, age: number }) => void;
+
+logDetails = (ninja: { name: string, age: number }) => {
+	console.log(`${ninja.name} is ${ninja.age} years old`);
 }
