@@ -4,20 +4,17 @@
 
 ## Covered topics
 - [x] Basics
-- [x] Create Next App
-- [x] Pages & Routes
-- [x] Links
-- [x] Layout component
-- [x] Styling
-- [x] 404
-- [x] Redirecting
-- [x] Images
-- [x] Head
-- [x] Dynamic Routes
-- [x] API Routes
-- [x] getStaticProps
-- [x] getStaticPaths
-- [x] getServerSideProps
-- [x] Deploy
+- [x] TSC
+- [x] Types
+- [x] Explicit Types
+- [x] Any
+- [x] tsconfig
+- [x] Aliases
+- [x] Casting
+- [x] TS with classes
+- [x] Interfaces
+- [x] Generics
+- [x] Enums
+- [x] Tuples
 
 And more...
