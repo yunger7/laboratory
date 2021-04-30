@@ -22,6 +22,32 @@ import { ListTemplate } from "./classes/ListTemplate.js";
 // invoices.push(invoiceTwo);
 // invoices.push(new Invoice("Holo", "buying too much apples", 150));
 
+// const addUID = <T extends object>(obj: T) => {
+// 	let uid = Math.floor(Math.random() * 100);
+// 	return {...obj, uid};
+// }
+
+// let docOne = addUID({ name: "Holo", age: 600 });
+// console.log(docOne);
+
+// interface Resource<T> {
+//   uid: number;
+//   resourceName: string;
+//   data: T;
+// }
+
+// const resourceOne: Resource<object> = {
+//   uid: 1,
+//   resourceName: "person",
+//   data: { name: "Nino", age: 18 },
+// }
+
+// const resourceTwo: Resource<string[]> = {
+//   uid: 2,
+//   resourceName: "shopping list",
+//   data: ["milk", "bread", "yogurt"],
+// }
+
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 
 // Inputs
