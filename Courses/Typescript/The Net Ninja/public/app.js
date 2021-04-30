@@ -14,6 +14,7 @@ import { ListTemplate } from "./classes/ListTemplate.js";
 // invoices.push(invoiceOne);
 // invoices.push(invoiceTwo);
 // invoices.push(new Invoice("Holo", "buying too much apples", 150));
+// // GENERICS
 // const addUID = <T extends object>(obj: T) => {
 // 	let uid = Math.floor(Math.random() * 100);
 // 	return {...obj, uid};
@@ -34,6 +35,27 @@ import { ListTemplate } from "./classes/ListTemplate.js";
 //   uid: 2,
 //   resourceName: "shopping list",
 //   data: ["milk", "bread", "yogurt"],
+// }
+// // ENUMS
+// enum ResourceType { BOOK, FILM, GAME, PERSON }
+// interface Resource<T> {
+// 	uid: number;
+// 	resourceType: ResourceType;
+// 	data: T;
+// }
+// type Book = {
+// 	title: string,
+// 	author: string,
+// }
+// const resourceOne: Resource<Book> = {
+//   uid: 1,
+//   resourceType: ResourceType.BOOK,
+//   data: { title: "Name of the wind", author: "Patrick Rothfuss" }
+// }
+// const resourceTwo: Resource<string> = {
+//   uid: 2,
+//   resourceType: ResourceType.PERSON,
+//   data: "Nino"
 // }
 const form = document.querySelector(".new-item-form");
 // Inputs
