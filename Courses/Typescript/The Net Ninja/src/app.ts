@@ -1,15 +1,4 @@
-// Classes
-class Invoice {
-	constructor (
-		readonly client: string,
-		private details: string,
-		public amount: number,
-	) {}
-
-	format() {
-		return `${this.client} owes £${this.amount} for ${this.details}`;
-	}
-}
+import { Invoice } from "./classes/Invoice.js";
 
 const invoiceOne = new Invoice("Mario", "work on the mario website", 250);
 const invoiceTwo = new Invoice("Luigi", "work on the Luigi website", 400);
@@ -17,6 +6,7 @@ const invoiceTwo = new Invoice("Luigi", "work on the Luigi website", 400);
 let invoices: Invoice[] = [];
 
 invoices.push(invoiceOne);
+invoices.push(invoiceTwo);
 invoices.push(new Invoice("Holo", "buying too much apples", 150));
 
 
