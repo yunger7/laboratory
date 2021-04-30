@@ -25,10 +25,10 @@ As someone who learns by doing, I find great value in hands-on courses, creating
   - [x] Material-UI
   - [x] Framer Motion
   - [x] Next.js
-  - [ ] MongoDB
+  - [x] MongoDB
+  - [x] TypeScript
   - [ ] Web sockets
   - [ ] JWT
-  - [ ] TypeScript
   - [ ] Linux
   - [ ] Shell Scripting
 </details>
