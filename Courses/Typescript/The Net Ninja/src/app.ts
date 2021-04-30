@@ -75,6 +75,19 @@ import { ListTemplate } from "./classes/ListTemplate.js";
 //   data: "Nino"
 // }
 
+// // TUPLES
+// let array = ["Tsukasa", 16, true];
+// array[0] = false;
+// array[1] = "Holo";
+// array = [18, false, "Nino"];
+
+// let tuple: [string, number, boolean];
+// tuple = ["Tsukasa", 16, true];
+// // tuple[0] = false;
+// // tuple[1] = "Holo";
+// // tuple = [18, false, "Nino"];
+// tuple[0] = "Nino";
+
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 
 // Inputs
@@ -90,12 +103,15 @@ const list = new ListTemplate(ul);
 form.addEventListener("submit", e => {
   e.preventDefault();
 
+  let values: [string, string, number];
+  values = [toFrom.value, details.value, amount.valueAsNumber];
+
   let doc: HasFormatter;
 
   if (type.value === "invoice") {
-    doc = new Invoice(toFrom.value, details.value, amount.valueAsNumber);
+    doc = new Invoice(...values);
   } else {
-    doc = new Payment(toFrom.value, details.value, amount.valueAsNumber);
+    doc = new Payment(...values);
   }
 
   list.render(doc, type.value, "end");
