@@ -1,0 +1,17 @@
+{
+  "name": "node-myanimelist",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kitsu": "^10.0.0-alpha.10",
+    "node-myanimelist": "^3.0.4"
+  }
+}
