@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  color: #29292e;
+}
+
+body, input, button, textarea {
+  font: 400 16px 'Roboto', sans-serif;
+}
+
+/* Main styles */
+
+h1 {
+  font-size: 7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: .25rem;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+header {
+  height: 40%;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+header span {
+  font-size: 3rem;
+}
+
+main {
+  height: 60%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+main section {
+  height: 300px;
+  width: 40%;
+  min-width: 650px;
+  max-width: 900px;
+  padding: 4rem;
+  border-radius: 5px;
+
+  box-shadow:
+    0 3.9px 4.6px rgba(0, 0, 0, 0.08),
+    0 12.3px 8.4px rgba(0, 0, 0, 0.056),
+    0 18.8px 19.2px rgba(0, 0, 0, 0.037),
+    0 22px 40px rgba(0, 0, 0, 0.019)
+}
+
+.buttons {
+  margin: 1.5rem 0 1.75rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  min-width: 125px;
+  height: 50px;
+  padding: 0 25px 0 25px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: border .2s;
+}
+
+button:hover {
+  border-color: #000;
+}
+
+/* Media queries */
+@media screen and (max-width: 1400px) {
+  header {
+    height: 25%;
+  }
+
+  main {
+    height: 75%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  main section {
+    width: 90% !important;
+    min-width: none;
+  }
+}
