@@ -1,0 +1,15 @@
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\bin\Debug\net6.0\IO.exe
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\bin\Debug\net6.0\IO.deps.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\bin\Debug\net6.0\IO.runtimeconfig.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\bin\Debug\net6.0\IO.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\bin\Debug\net6.0\IO.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.csproj.AssemblyReference.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.AssemblyInfoInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.AssemblyInfo.cs
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\refint\IO.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\IO.genruntimeconfig.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\IO\obj\Debug\net6.0\ref\IO.dll

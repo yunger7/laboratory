@@ -1,0 +1,15 @@
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\bin\Debug\net6.0\ClassesAndObjects.exe
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\bin\Debug\net6.0\ClassesAndObjects.deps.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\bin\Debug\net6.0\ClassesAndObjects.runtimeconfig.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\bin\Debug\net6.0\ClassesAndObjects.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\bin\Debug\net6.0\ClassesAndObjects.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.csproj.AssemblyReference.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.AssemblyInfoInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.AssemblyInfo.cs
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\refint\ClassesAndObjects.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ClassesAndObjects.genruntimeconfig.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ClassesAndObjects\obj\Debug\net6.0\ref\ClassesAndObjects.dll
