@@ -1,0 +1,15 @@
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.exe
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.deps.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.runtimeconfig.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.csproj.AssemblyReference.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.AssemblyInfoInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.AssemblyInfo.cs
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\refint\ExceptionHandling.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.genruntimeconfig.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\ExceptionHandling\obj\Debug\net6.0\ref\ExceptionHandling.dll

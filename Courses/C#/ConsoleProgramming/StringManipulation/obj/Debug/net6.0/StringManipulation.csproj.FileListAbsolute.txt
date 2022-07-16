@@ -1,0 +1,15 @@
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\bin\Debug\net6.0\StringManipulation.exe
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\bin\Debug\net6.0\StringManipulation.deps.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\bin\Debug\net6.0\StringManipulation.runtimeconfig.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\bin\Debug\net6.0\StringManipulation.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\bin\Debug\net6.0\StringManipulation.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.csproj.AssemblyReference.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.AssemblyInfoInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.AssemblyInfo.cs
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\refint\StringManipulation.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\StringManipulation.genruntimeconfig.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\StringManipulation\obj\Debug\net6.0\ref\StringManipulation.dll

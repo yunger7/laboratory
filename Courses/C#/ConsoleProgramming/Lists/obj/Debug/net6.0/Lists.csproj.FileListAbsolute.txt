@@ -1,0 +1,15 @@
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\bin\Debug\net6.0\Lists.exe
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\bin\Debug\net6.0\Lists.deps.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\bin\Debug\net6.0\Lists.runtimeconfig.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\bin\Debug\net6.0\Lists.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\bin\Debug\net6.0\Lists.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.csproj.AssemblyReference.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.AssemblyInfoInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.AssemblyInfo.cs
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\refint\Lists.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\Lists.genruntimeconfig.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\Lists\obj\Debug\net6.0\ref\Lists.dll

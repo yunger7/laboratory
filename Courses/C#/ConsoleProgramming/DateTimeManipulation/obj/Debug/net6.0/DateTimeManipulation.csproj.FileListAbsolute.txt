@@ -1,0 +1,15 @@
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\bin\Debug\net6.0\DateTimeManipulation.exe
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\bin\Debug\net6.0\DateTimeManipulation.deps.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\bin\Debug\net6.0\DateTimeManipulation.runtimeconfig.json
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\bin\Debug\net6.0\DateTimeManipulation.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\bin\Debug\net6.0\DateTimeManipulation.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.csproj.AssemblyReference.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.AssemblyInfoInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.AssemblyInfo.cs
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\refint\DateTimeManipulation.dll
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.pdb
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\DateTimeManipulation.genruntimeconfig.cache
+C:\Users\luisg\Documents\projects\ConsoleProgramming\DateTimeManipulation\obj\Debug\net6.0\ref\DateTimeManipulation.dll
